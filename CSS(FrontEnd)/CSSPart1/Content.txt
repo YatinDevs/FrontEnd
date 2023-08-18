@@ -1,0 +1,19 @@
+(1) CSS Fonts,COLORS,SELECTORS.
+(2) SPECIFICITY,BORDER,BOX MODEL.
+(3) BLOCK,INLINE,INLINE BLOCK ELEMENTS.
+(4) CSS Text Properties, Inheritance.
+(5) Pseudo Classes And ELements.
+
+What is CSS?
+Cascading Style Sheets.
+Html Creates Structure Of Our WebPage.
+CSS turns Our Boring Looking HTML Web Pages To Good Looking Websites.
+It is Impossible to Create Website without Html.
+
+
+1996 : CSS1
+1998 : CSS2
+1998 : CSS3(current)
+
+Hakon Wium lie  --> Proposed Concept of CSS.--> 1994.
+Tim Berners Lee --> Father of Web / Html.

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+/*
+
+Universal Selector '*' 
+*{
+    color:plum;
+}
+*/
+ header{
+    background-color: #f2e9e9 ;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ section.my-articles{
+   background-color: #f2e9e9;
+ }
+
+ header p{
+    color:blueviolet;
+ }
+
+ li a {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
+ }
+
+ /* 
+ // It Changes All h2 inside the section
+ 
+ section.my-articles h2{ 
+    font-family: sans-serif;
+    color: green;
+ }
+
+ */
+
+  /* Change the direct Child */
+ section.my-articles > h2{    
+    font-family: sans-serif;
+    color: green;
+ }
+
+ /* Changes paragraph directly after h2 anywhere 
+ h2+p{
+    color : orangered;
+ }
+*/
+ /* Changes paragraph directly after ul anywhere */
+ ul+p{
+    color :darkmagenta;
+ }
+
+/* Changes paragraph directly after h2 where section is myarticles */
+section.my-articles h2+p{
+    color : orangered;
+ }
+

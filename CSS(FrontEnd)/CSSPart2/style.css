@@ -1,0 +1,17 @@
+/* Absolute Units */
+p{
+    /*font-size: 16px;*/
+    font-size: 32px;
+    font-size: 96px;
+    /* 1 inch == 96 px */
+    font-size: 1in;
+    /* 1 inch == 2.54cm */
+    font-size: 2.54cm;
+
+    /*
+    *  1px == 0.75pt 
+    *  16px== 16*0.75 == (12)
+    */
+    font-size: 12pt;
+    border: 12pt solid red;
+}

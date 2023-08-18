@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body{
+    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ID selector --> # tag */
+#main-heading{
+    background-color: #cdcdcd;
+}
+
+/* Class Selector --> . tag */
+.main-section{
+    background-color: #efefef;
+}
+
+p{
+    color: blueviolet;
+    font-weight: 400;
+}
+
+/*
+Developers :
+
+ id vs Classes.
+ id --> less Used  --> Dont Use Same id Twice on One Pafe.
+ class --> most Used --> Classes Can be used multiple times.
+
+ Web Theme:
+ Utility Classes(pre-made classes for multi use):
+ */
+
+ .text-red{
+    color : red;
+ }
+
+ .text-green{
+    color : green;
+ }
+
+ .bg-grey{
+   background-color:  #cdcdcd;
+ }
+
+ .bg-dark {
+    background-color: rgb(42, 41, 41);
+ }

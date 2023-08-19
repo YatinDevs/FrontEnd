@@ -1,0 +1,100 @@
+/*
+**  Specificity  **
+
+More Specific : 
+
+
+inline Style Selector > id selector > class selector > element Selector.
+
+*/
+/* 
+#h1id{
+    color: blue !important;
+}
+*/
+/*
+#h1id{
+    color: blue;
+}
+*/
+
+
+/*
+classes -->
+when two class are declared 
+we considered  :
+which is recently declared and override the above one
+*/
+/*
+.heading{
+    color : magenta;
+}
+
+.h1class{
+    color: red;
+}
+
+h1{
+    color: green;
+}
+*/
+
+/*
+classes -->
+when two class are declared 
+here we considered  :
+more specific h1.heading
+because it is more specific that h1 element heading class should be changed
+other than h1 class
+
+*/
+
+h1.heading{
+    color : magenta;
+}
+/* 0,0,1,1 ---> 11 */
+.h1class{
+    color: red;
+}
+/* 0,0,1,0 ----> 10 */
+h1{
+    color: green;
+}
+
+
+/*
+**  Specificity  **
+
+More Specific : 
+
+
+inline Style Selector > id selector > class selector > element Selector.
+
+*/
+/* how to calculate the Specificity */
+
+div#container ul.my-games li{
+    color: red;
+    background-color: yellow;
+}
+
+.favourite{
+    color:yellow ;
+    background-color: red;
+}
+div#container ul.my-games li.favourite{
+    color:yellow ;
+    background-color: red;
+}
+
+/* how to calculate the Specificity */
+
+/* div#container ul.my-games li */
+/* _ , _ , _ , _ */
+/* 0 , 1 , 1 , 3 ----->  113*/
+
+/* favourite  --> Old Specificity */
+/* 0,0,1,0  ---> 10 */
+
+/* div#container ul.my-songs li.favourite */
+/* 0,1,2,3 -----> 123 */

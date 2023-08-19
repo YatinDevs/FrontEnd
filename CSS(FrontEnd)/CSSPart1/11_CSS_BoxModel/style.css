@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Padding */
+h1{
+   border:2px solid red;
+   padding-left:40px;
+   padding-right:40px;
+   padding-top:20px ;
+   padding-bottom:20px ;
+   margin-left:200px; ;
+   margin-right:200px; ;
+   margin-top:50px; ;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+/* short hand all sides */
+h1{
+    padding : 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* short hand topbottom leftright */
+h1{
+    padding : 20px 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ /* short hand  clockwise Padding */
+
+ h1{
+    padding: 20px 30px 20px 30px;
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    border :10px solid purple;
+  
+ }
+
+ h1{
+    padding: 50px;
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    border :10px solid purple;
+   /* margin-left:200px; ; */
+   /* margin-right:200px; ; */
+   /* margin-top:50px;  */
+   /* margin-bottom:50px; ; */
+     
+   /* width:500px ; */
+   margin:20px;
+   /* text-align: center; */
+ }
+
+/* Background color start where Border starts*/
+/* 
+Padding ->
+Space between Border and content*/

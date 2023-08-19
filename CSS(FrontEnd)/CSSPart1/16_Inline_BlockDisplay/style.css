@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+
+    font-family: "Poppins", sans-serif;
+    border: 2px solid black;
+
+    /*
+    Inline Element - a
+    Problems with padding and Margin
+
+    margin: 50px;
+    padding:50px;
+    */
+    /*
+    Cannot change height and width :
+    Remains as it is 
+    Only takes what is Required
+
+    height: 100px; 
+    width: 100px;
+    */
+    
+}
+a{
+    display: inline-block;  
+    font-family: "Poppins", sans-serif;
+    border: 2px solid black;
+
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 100px;
+}

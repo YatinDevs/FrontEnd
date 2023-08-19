@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+/*
+div.main-heading h2{
+    text-align: center;
+    background-color: #cdcdcd;
+    font-family: poppins;
+    margin-left:200px;
+    margin-right:200px;
+    padding:10px 500px 10px 500px;
+
+}
+
+div.content-blog{
+    margin-left:200px;
+    margin-top:10px;
+    margin-right:200px;
+    margin-bottom:40px;
+
+    border: solid 2px;
+    padding-top:15px;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    font-family: poppins;
+}
+*/
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    width :1400px;
+    margin: 0 auto;
+}
+h1{
+    background: #cdcdcd;
+    text-align:center;
+    padding: 15px 0px;
+}
+
+section.about-me,section.about-lily{
+    border: 2px solid #666;
+    padding: 10px;
+}
+.about-me{margin-bottom: 40px;}
+
+section h3{
+    text-transform: uppercase;
+    color: #444;
+}

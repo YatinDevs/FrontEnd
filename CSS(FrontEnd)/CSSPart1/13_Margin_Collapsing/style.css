@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box1,.box2{
+    border: 2px solid #444;
+    padding: 10px;
+}
+/* Margin Collapsing */
+.box1{
+    margin-bottom: 40px;
+}
+.box2{
+    margin-top: 50px;
+}
+/*
+its not 40 bottom of box1 + 50 top of box2 = 90 
+margin between box1 and box2
+
+Here the greater margin is considered and it is collapsed
+So margin between box1 and box 2
+greater i.e 50 px is considered 
+*/

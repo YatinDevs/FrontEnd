@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+h1,h2{
+
+    border:2px solid black;
+    /*
+    Block Elements Take Whole Page Width
+    Observation : We Can Make Changes.
+    width: 500px;
+    height: 100px;
+    */
+   /* block Elements to Inline */
+    display:inline-flex;
+}
+
+a{
+    border: 2px solid black;
+   /*
+     Inline Element take width only what is required 
+     Observation : No Change.
+     
+    width: 100px;
+    height: 100px;
+    */
+
+    /*
+    After changing display of inline to block 
+    All the Problems with margin and padding are solved
+    */
+    display: block;
+    margin:20px 10px;
+    padding: 10px;
+}
+/*   
+     Block Element take All Margin
+     Observation : Changes All Sides.   
+ h1{
+    margin: 100px;
+    
+ }  
+ */
+
+
+
+    /*   
+     Inline Element take Margin only left and right 
+     Observation : Change Only in Margin-left-right  .
+     No Change in Margin top-bottom (it shows but No Changes).
+
+ a{
+          margin: 100px;
+  }
+    */
+    
+/* Good to go Padding in Block elements 
+
+h1{
+   padding: 50px;
+}
+*/
+/* 
+No need to Give padding at top and bottom
+for inline Element
+it mess the things only left right
+
+a{
+    padding:0px 50px;
+}
+*/

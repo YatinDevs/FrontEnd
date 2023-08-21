@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900;800&display=swap");
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Pseudo Class */
+/* First Child */
+
+p:first-child{
+    /* color:red; */
+}
+/* If p Exists and its First-Child of its Parent it Changes*/
+/* First of Type */
+p:first-of-type{
+    color: red;
+}
+
+p:last-child{
+    /* color: green; */
+}
+p:last-of-type{
+    color:green;
+}

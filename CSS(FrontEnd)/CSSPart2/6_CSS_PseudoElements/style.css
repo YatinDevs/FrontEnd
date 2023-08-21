@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900;800&display=swap");
+
+body{
+ 
+    font-family: "Poppins", sans-serif;
+}
+/* Note: First letter and First line Pseudo Elements 
+   Works with Block Level Element Only . */
+
+/* first-letter , first-line,selection ,first-word */
+p::first-letter{
+    display: inline-block;
+    font-size: 32px;
+}
+p::selection{
+    background: black;
+    color: white;
+}
+h1::selection{
+    background: black;
+    color: white;
+}
+/*
+p::first-line{
+    background: black;
+    color: white;
+}
+*/
+
+/* before and after pseudo Elements */
+
+.para1::before{
+    content: 'Hello ! Paragraph One.';
+    color:purple;
+    border: 2px solid black;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+.para2::after{
+    content: 'End of Paragraph One.';
+    color:purple;
+    border: 2px solid black;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+.main-heading::after{
+    content: 'Hello ! Welcome to Website.';
+    color:purple;
+    border: 2px solid black;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+/*
+
+cannot add before and after where there is no content in it
+like empty div p or h
+or after/before img,br,input
+
+all replaced elements:
+we cannot use it like
+iframe
+video
+embed
+img
+
+option
+audio
+canvas
+object
+applet
+
+*/

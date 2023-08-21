@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <!-- Input and Labels-->
+        <!-- Action and Method and Name-->
+        <!-- PlaceHolder and Required -->
+        <!--Radio Buttons-->
+        <!-- Drop down List-->
+        <!-- Color & Date & TextArea & file-->
+        <!-- Id and Classes--> <!-- important-->
+
+    <h1>HTML FORMS</h1>
+    <form action="hello.html" method="GET">
+        <label for="userName">UserName : </label>
+        <input type="text" id="userName" name="userName" placeholder="UserName" required>
+        <br> <br>
+        
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <br> <br>
+        
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" placeholder="Email ID" required>
+        <br> <br>
+
+        <p>Select Your Gender : </p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <br> 
+        
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br> <br>
+        
+
+        <label for="age-group">Select Your Age Group : </label>
+        <select name="age-group-values" id="age-group" >
+             <option value="5-10">5-10</option>
+             <option value="11-21">11-21</option>
+             <option value="22-35">22-35</option>
+             <option value="35-60">35-60</option>
+             <option value="60">60+</option>
+
+        </select>
+        <br> <br>
+
+        <input type="submit" value="Sign In">
+
+        <p>Description Below For Appointment  : </p>
+        <textarea name="" id="" cols="30" rows="20" placeholder="Decription Here"></textarea>
+        <br><br>
+
+        <p>Pick A Color :</p>
+        <input type="color" name="" id="">
+
+        <p>Date :</p>
+        <input type="date" name="" id="">
+
+        <p>Submit Attachments Below :</p>
+        <input type="file" name="" id="">
+        
+        
+        
+    </form>
+    
+</body>
+</html>
+<!--
+    http://127.0.0.1:5501/Html/thankyou.html?
+    userName=Yatin&password=abv%40123&email=Yatin24214%40gmail
+    .com
+-->
+<!--
+    http://127.0.0.1:5501/Html/hello.html?
+    userName=Yatin&
+    password=Yatin%& 
+    email=Yatin24214%40gmail.com&
+    gender=male&
+    age-group-values=22-35
+-->

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900;800&display=swap"); 
+
+
+body{
+ 
+    font-family: "Poppins", sans-serif;
+} 
+/*
+
+h1{
+    border : 5px solid red;
+    width: 20em;
+    viewport width -vw 
+    width: 50vw;
+}
+
+*/
+/*
+.box1{
+    border: 4px solid red;
+    padding: 5px;
+    width: 50%;
+}
+
+h1{
+    border:2px solid green;
+    width: 50%;
+}
+*/
+/*
+
+%
+percent is with respective to parent
+cares about parent
+
+*/
+
+/*
+.box1{
+    border: 4px solid red;
+    padding: 5px;
+    width: 50%;
+}
+
+h1{
+    border:2px solid green;
+    width: 50%;
+    
+    width: 70%;    width: 70vw;
+
+    see difference of vw and % 
+
+}
+*/
+
+/*
+vw is with respective to child only
+doesnt cares about parent
+*/
+
+/* .box{
+    height: 100vh;
+    background-color: aqua;   
+}
+ */
+/*
+vh , vw 
+
+to check minimum and take its 100 percent
+
+*/
+
+.box{
+    height: 100vmax;
+    background-color: aqua;   
+}

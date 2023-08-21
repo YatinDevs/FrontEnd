@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900;800&display=swap");
+
+body{
+ 
+    font-family: "Poppins", sans-serif;
+}
+
+/* 
+     Relative Units 
+
+<!--  Two Types of CSS Units -->
+<!--  1) Absolute Units. -->
+<!--Fixed-->
+<!--  2) Relative Units. -->
+<!--Not Fixed-->
+*/
+/*  3 .Understanding em Unit in CSS */
+
+h1{
+    font-size: 2em;
+    border: 2em solid black;
+    padding: 2em;
+}
+/* consider all h1
+  
+h1 --> body parent
+h1 --> div box1 parent --> body parent
+ */
+
+.box1{
+    font-size: 20px;
+}
+
+/* Consider fontsize of related class to change */

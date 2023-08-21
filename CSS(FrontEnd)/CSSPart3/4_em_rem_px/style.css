@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900;800&display=swap");
+
+body{
+ 
+    font-family: "Poppins", sans-serif;
+}
+/* 
+
+Relative Units 
+
+
+<!--  Two Types of CSS Units -->
+<!--  1) Absolute Units. -->
+<!--Fixed-->
+<!--  2) Relative Units. -->
+<!--Not Fixed-->
+*/
+/*  Understanding em vs rem vs px */
+/*  
+ InCase font-size: Use rem
+ InCase font-size: if px are used More media queries Required to be responsive.
+*/
+:root{
+    /* font-size: 10px; */
+    font-size: 62.5%;
+    
+}
+h1{
+    font-size: 2.8rem;
+    border: 4px solid black;
+    /* padding: 20px; */
+    padding: 1rem;
+
+    /*
+          html : root
+    font size = 10px i.e 62.5%
+    font size = 2.8rem
+    i.e  2.8 x 10 = 28px
+
+    padding 1em  = respective to fontsize 
+    so 1em = 28px as fontsize is 28px in h1 child
+             html : root --> size is 10px
+    but in case of em we consider element fontsize
+    of child and not root i.e 28px --> 2.8 rem --> 10px 
+    */
+      /*
+      html : root
+    font size = 10px i.e 62.5%
+    font size = 2.8rem
+    i.e  2.8 x 10 = 28px
+
+    padding 1rem  = respective to fontsize of root
+    so 1rem = 10px as fontsize is 10px in root
+    html size is 10px
+    but in case of em we consider element fontsize
+    */
+
+}
+p{
+    font-size: 2rem;
+}
+
+/*
+padding and Margin
+personal preference: rem or em 
+padding ---> em
+
+*/
+
+/*
+font size : rem
+padding & margin :em
+thin border : px
+layout : %
+*/

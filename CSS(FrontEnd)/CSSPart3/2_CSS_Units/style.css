@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900;800&display=swap");
+
+body{
+ 
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* 
+
+Relative Units 
+
+
+<!--  Two Types of CSS Units -->
+<!--  1) Absolute Units. -->
+<!--Fixed-->
+<!--  2) Relative Units. -->
+<!--Not Fixed-->
+*/
+/*  2 .Understanding Rem Unit in CSS */
+
+html{
+    /* font-size: 10px; */
+    font-size: 62.5%;
+    /* 16px -->100% */
+    /* 10px --->  100/16*10  */
+}
+
+.box1{
+    /* font-size: 2rem; */
+}
+
+/*
+  2rem = 
+  
+  it check root element .i.e. html element
+   html element its 16px default
+   font-size
+   so 2rem = 2*16 = 32px
+*/
+
+.text-content{
+     font-size: 3rem; 
+     border: 1rem solid red;
+     margin: 0.5 rem;
+     padding: 2.5rem;
+}
+/*
+  Makes Calulation easy 
+  by font size :10px
+
+*/
+

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900;800&display=swap"); 
+
+
+body{
+ 
+    font-family: "Poppins", sans-serif;
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+.fav-musicians{
+    border: 5px solid green;
+
+}
+
+.mozart{
+  width: 25%;
+  background-color: lightgoldenrodyellow;
+  float:left;
+  padding: 20px;
+
+}
+
+.beethoven{
+  width: 25%;
+  background-color: lightsalmon;
+  float: left;
+  padding: 20px;
+
+} 
+.bach{
+    width: 25%;
+    background-color: lightgoldenrodyellow;
+
+    float: left;
+    padding: 20px;
+
+}
+.paganini{
+    width: 25%;
+    background-color: lightsalmon;
+    float: left;
+    padding: 20px;
+
+}
+.box{
+  clear:both;
+}
+/* without clear fix class */
+.fav-musicians::after{
+   content: "";
+   display: block;
+   clear: both;
+}

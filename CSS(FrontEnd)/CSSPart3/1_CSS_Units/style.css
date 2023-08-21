@@ -1,0 +1,49 @@
+/* Absolute Units */
+
+.para1{
+    /*font-size: 16px; default*/
+    font-size: 32px;
+    font-size: 96px;
+    /* 1 inch == 96 px */
+    font-size: 1in;
+    /* 1 inch == 2.54cm */
+    font-size: 2.54cm;
+
+    /*
+    *  1px == 0.75pt 
+    *  16px== 16*0.75 == (12)
+    */
+    font-size: 12pt;
+    border: 12pt solid red;
+}
+
+/* Relative Units */
+/*  1 .Understanding % in CSS */
+
+div{
+    border :2px solid red;
+    font-size: 10px;
+    /* width:500px; */
+    width: 50%;
+}
+
+p{
+    border :2px solid green;
+    font-size: 200%;
+    width :50%;
+    /* margin:4px auto; */
+    /* margin-left:25%; */
+    margin: 10px auto;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* % is respect to parent here 10 so 200 % of 10 p will be 20px 
+*/
+/*
+  % are mostly Used to Give width and Margin .
+*/
+
+
+/*  2 .Understanding Rem Unit in CSS */
+

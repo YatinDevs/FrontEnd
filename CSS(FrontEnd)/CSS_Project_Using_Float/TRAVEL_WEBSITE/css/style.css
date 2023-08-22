@@ -1,0 +1,56 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900;800&display=swap");  */
+
+/* Default CSS Reset */
+
+*{
+    margin:0;
+    padding:0;
+    /* to contain within specific width  */
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins", sans-serif;
+}
+
+
+/* Setting Background Image */
+.header{
+    height: 95vh; /* mostly 100vh personal preference visitor can see below site also */
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/header-image.jpg');
+    background-position:center;
+    background-size:cover; 
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+    font-weight: 400;
+}
+
+/* Styling Nav Bar */
+.header .logo,
+.header .navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.header .navbar .logo{
+    float: left;
+}
+.header .navbar .nav-items{
+    float: right;
+}
+.navbar{
+    border: 2px solid white;
+}
+.header .navbar .nav-item{
+     border: 2px solid white;
+     display: inline-block;
+}
+/* without clear fix class using pseudo class to fix float */
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}

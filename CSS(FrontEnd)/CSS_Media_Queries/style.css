@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900;800&display=swap");  
+
+/* ####################Default CSS Reset#################### */
+
+
+/* #################### Html Element Styling #################### */
+
+html{
+    /* font-size: 10px; */
+    /* 16px --> 100 % */
+    /* 10px --> (100/16)*100 */
+    font-size: 62.5%;
+}
+
+body{
+    font-family:"Poppins", sans-serif;
+    background: lightcyan;
+}
+h1{
+    font-size: 10rem;
+}
+p{
+    font-size: 5rem;
+}
+
+/*    ------------- Media Queries ------------ */
+/* as soon as width gets lower than 500px font size changes  */
+/* Break point ----> max-width :768px is called */
+
+@media (max-width : 500px){
+    html{
+        font-size: 5px;
+    }
+    body{
+        background: lightcoral;
+    }
+}
+
+
+@media (min-width:501px) and (max-width : 768px){
+    body{
+        background: lightgoldenrodyellow;
+    }
+}
+
+
+@media (min-width:769px) and (max-width : 1024px){
+    body{
+        background: pink;
+    }
+}
+
+@media (min-width:1025px) and (max-width : 1200px){
+    body{
+        background: lightsalmon;
+    }
+}

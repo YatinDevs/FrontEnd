@@ -70,10 +70,14 @@ h1,h2,h3{
      color: #f4f4f4;
 }
 .text-black{
+
     color: #333333;
 }
 .text-gray{
     color : #555555;
+}
+.bg-dark{
+    background-color: #263238;
 }
 
 /* btn Utility Classes */
@@ -86,9 +90,24 @@ h1,h2,h3{
 }
 .btn-primary{
     background-color: #fff;
-    border-radius: 10rem;
-  
+    border-radius: 10rem; 
 }
+
+.btn-secondary{
+    border: 0.5px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+}
+/* Button Hover --> Styling */
+.btn-primary:hover{
+    background-color: #dddddd;
+}
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+}
+
+
+
 
 
 /* ######### Header Styling ##########*/
@@ -117,19 +136,19 @@ h1{
     color: white;
 } */
 
-.header .navbar .logo{
+.navbar .logo{
     float: left;
     /* font-size: 3.5rem; */
 
 }
-.header .navbar .nav-items{
+.navbar .nav-items{
     float: right;
     margin-top: 1rem;
 }
 .navbar{
     padding: 1rem;
 }
-.header .navbar .nav-item{
+.navbar .nav-item{
      display: inline-block;
      padding: 1rem;
      text-transform: uppercase;
@@ -159,6 +178,7 @@ h1{
 
 
 /* Center Things in CSS. */
+
 .header-content{
    /* border: 0.5px solid white; */
     position: absolute;
@@ -176,4 +196,127 @@ h1{
 
 .header-content p{
     text-transform: uppercase;
+}
+
+/*   ###########  ShowCase Section Styling ##########  */
+
+.showcase{
+    background: #dddddd;
+    padding: 10rem;
+}
+/*  Box-Shadow -->  */
+
+.row{
+    height: 350px;
+    background: #ffffff;
+    /* border: 1px red solid; */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.311);
+}
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box{
+    float:left;
+    width: 50%;    
+}
+
+
+.row2 .img-box,
+.row1 .text-box{
+    float:right;
+    width: 50%;
+}
+
+
+.row .img-box{
+    height: 100%;
+    /* border: 6px greenyellow solid; */
+
+ }
+
+ .row .text-box{
+    /* border: 6px blue solid; */
+    padding: 3rem;
+
+ }
+/* adding Image in SHowcase */
+/* Main Aspect Ratio --> Object-fit */
+ .row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+ }
+
+ .row::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+/* ######### Styling Features Section  #############*/
+
+.features{
+    padding: 10rem 0;
+}
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.528);
+
+}
+.box{
+    width:33.333333%;
+    float: left;   
+    padding: 2rem;
+    text-align: center;
+
+}
+.box-1,
+.box-3{
+    background-color: #263238cc;
+    color : #fff;
+}
+/*
+
+https://cssgradient.io/gradient-backgrounds/ 
+  User for Linear Gradient Backgrounds
+*/
+.box-2{
+    background:linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color : #fff;
+
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ############# Add Icons To Features  ################ */
+
+/*  Font Awesome website */
+/* 
+Copy kit code 
+<script src="https://kit.fontawesome.com/3aaaedeb41.js" crossorigin="anonymous"></script>
+
+or 
+
+cdnjs.com
+Font Awesome
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
+
+*/
+
+
+/* ###### footer styling ####### */
+
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.social-media-links i {
+    margin: 2rem;
 }

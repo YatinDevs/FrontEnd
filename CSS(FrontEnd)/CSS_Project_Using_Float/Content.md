@@ -34,3 +34,38 @@
 - center things in CSS.
 
 # 5. ShowCase Section Html
+- html
+- Styling
+- floating img box and text box
+- improve showcase
+- adding image
+- adding text content
+- add button
+- add button Hover Effect 
+- add Box Shadow.
+
+# 6. Feature Section html
+- html
+- Styling
+- adding content
+- floating and arrangement
+- adding fontawesome
+- adding background gradient
+
+# 7. Footer Html 
+
+- html
+- styling
+- add icons
+- explore button to section explore id
+
+# 8.About Page Navbar.
+- NavBar in About Page
+- Draw line using pseudo element
+- about wrapper styling
+- counts div styling
+- banner styling
+
+# 9. Contact Page
+- Html page layout
+- styling 

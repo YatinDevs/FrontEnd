@@ -103,7 +103,7 @@ h1,h2,h3{
     background-color: #dddddd;
 }
 .btn-secondary:hover{
-    background-color: #fcf3f2;
+    background-color: #eed9d7d2;
 }
 
 
@@ -319,4 +319,145 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
 }
 .social-media-links i {
     margin: 2rem;
+}
+
+/* ########## Media Query Pratice : Making Website Responsive 1 ######### */
+/* Media Queries on Home page ----------- > Header */
+
+@media (max-width : 500px) 
+{
+    html{
+        font-size: 50%;
+    }    
+
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .header-content .main-heading{
+        display: none; 
+    }
+    .row{
+        height:auto;
+        width: 100%;
+    }
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .row .text-box h2{
+        font-size: 150%;
+        text-align: center;
+    }
+    .row .text-box p{
+        font-size: 150%;
+    }
+    .features .box{
+        float:none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.528);
+
+    }
+    .features .box-2,
+    .features .box-3{
+        margin-top: 5rem;
+
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+
+    }
+
+}
+
+/* Part 2 501 above */
+
+@media (min-width:501px) and (max-width:768px)
+{
+    html{
+        font-size: 50%;
+    }  
+    /* added  rest all same*/  
+    p{
+        font-size: 1.8rem;
+    }
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* .header-content .main-heading{
+        display: none; 
+    } */
+    .row{
+        height:auto;
+        width: 100%;
+    }
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .row .text-box h2{
+        font-size: 150%;
+        text-align: center;
+    }
+    .row .text-box p{
+        font-size: 150%;
+    }
+    .features .box{
+        float:none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.528);
+
+    }
+    .features .box-2,
+    .features .box-3{
+        margin-top: 5rem;
+
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+
+    }
+
+
+}
+
+/* Part 3 768 above and below 1200 */
+
+@media (min-width:768px) and (max-width:1200px)
+{  
+    html{
+        font-size: 56.25%;/*9px*/
+    }
+    
+    .row .text-box h2{
+        font-size: 150%;
+        text-align: center;
+    }
+    .row .text-box p{
+        font-size: 150%;
+    }
+}
+
+/* Part 3 768 above and below 1200 */
+
+@media (orientation:landscape) and (max-height:500px){
+
+    .header{
+        height: 90vmax;
+    }
 }

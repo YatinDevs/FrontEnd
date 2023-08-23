@@ -116,3 +116,40 @@
     display: block;
     clear: both;
 }
+
+
+/* ########## Media Query Pratice : Making Website Responsive 1 ######### */
+/* Media Queries on Home page ----------- > Header */
+@media (max-width : 500px) 
+{
+.cta-banner-left,
+.cta-banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+
+}
+}
+
+/* Part 2 501 above */
+
+@media (min-width:501px) and (max-width:768px)
+{
+.cta-banner-left,
+.cta-banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+
+}
+}
+/* Part 3 768 above and below 1200 */
+
+@media (min-width:769px) and (max-width:1200px)
+{  
+    html{
+        font-size: 56.25%;/*9px*/
+    }
+}
+
+/* Orientation : Landscaping */

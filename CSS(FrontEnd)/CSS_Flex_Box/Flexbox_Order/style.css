@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body{
+    font-family:"Poppins", sans-serif;
+}
+
+.box-wrapper{
+    border: 10px solid #222;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    justify-content: space-between;
+}
+.box{
+    border: 1px solid #666;
+    width: 550px;
+
+}
+.box-1{
+  background: lightblue;
+  /* order: 0;  by default */
+  order: 1;
+}
+.box-2{
+    background: lightcoral;
+    order: 0;
+  }
+.box-3{
+    background: lightcyan;
+    order: 2;
+  }
+.box-4{
+    background: lightgoldenrodyellow;
+  }
+.box-5{
+    background: lightsalmon;
+}

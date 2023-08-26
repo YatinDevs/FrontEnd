@@ -1,0 +1,53 @@
+.box{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background: rgb(87, 169, 197);
+    margin: 100px auto;
+    
+    transition: transform 0.5s ease-in-out;
+    /* transform: rotate(20deg); */
+
+    /*
+    Using Transform we Can:
+    Rotate
+    Skew
+    Scale
+    Translate
+    */
+
+    /* transform: TranslateX(50px); */
+    /* transform: TranslateY(50%); */
+    /* 
+       origin is in center
+       so will move 50% of its 100px
+       i.e 50px move towards X
+    
+    */
+       /* transform:  skew(50deg,50deg);  */
+
+
+
+        /* Transform Origin */
+     /* transform-origin: 10px 10px; */
+     /* transform-origin: top right;
+     transform-origin: top left; */
+     transform-origin: 0% 100%;
+
+}
+
+.box:hover{
+    transform: rotate(360deg);
+    /* transform: scale(3,1.5); */
+    /* TranslateXY(X,Y) */
+        /* transform: Translate(50px,100px); */
+
+        /* Skew */
+
+        /* transform:  skewX(20deg); */
+        /* transform:  skewY(60deg); */
+        
+
+        
+
+}

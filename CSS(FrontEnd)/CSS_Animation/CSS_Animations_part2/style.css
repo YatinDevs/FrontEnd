@@ -1,0 +1,52 @@
+.box{
+    width: 50px;
+    height: 50px;
+    background: lightcoral;
+    border-radius: 50%;
+    /* animation-name: move-around; */
+    position: relative;
+    /* left right top bottom can be set now */
+    /* animation-duration: 5s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-delay: 2s; */
+    /* animation-timing-function: ease-in; */
+    /* ease- in :  animation start slow
+       animation ends slow :out
+       both simultaneously :in-out*/
+     /* animation-fill-mode: forwards; */
+
+  animation: move-around 5s forwards 2s ease-in infinite;
+}
+
+@keyframes move-around {
+    
+      0%{
+          top : 0;
+          left: 0;
+          background: lightsalmon;
+      }
+      25%{
+          top : 0;
+          left: 300px;
+          background: lawngreen;
+      }
+      50%{
+        top: 300px;
+        left: 300px;
+        background: lightcyan;
+
+      }
+       75%{
+         top: 300px;
+         left: 0;
+         background: purple;
+
+       }
+      100%{
+        top: 0;
+        left: 0;
+        background: red;
+
+
+      }
+}

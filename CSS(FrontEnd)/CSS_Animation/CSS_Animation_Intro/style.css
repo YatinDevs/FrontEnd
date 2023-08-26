@@ -1,0 +1,43 @@
+.box1{
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: change-bg-color;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    /* animation-iteration-count:3; */
+    animation-fill-mode: forwards; 
+    /*  will keep the color to orange only*/
+
+}
+
+/* making key Frame */
+
+@keyframes change-bg-color {
+    from{
+       background-color: red;
+    }
+    to{
+        background-color: orange;
+    }
+}
+
+.box2{
+    width: 15px;
+    height: 10px;
+    background:green;
+    animation-name: grow-width;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    /* animation-direction: reverse; */
+}
+
+@keyframes grow-width {
+    
+    from {
+        width: 0;
+    }
+    to{
+        width: 1200px;
+    }
+}

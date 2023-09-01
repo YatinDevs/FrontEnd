@@ -22,7 +22,8 @@
 - For loop examples
 - Break and continue keyword
 - Do while loop
-- Arrays in JavaScript
+
+# Arrays in JavaScript
 - Intro to arrays
 - Push pop shift unshift
 - Primitive vs reference data types
@@ -34,13 +35,13 @@
 - For in loop
 - Array destructuring
 
-Objects in JavaScript
-Intro to objects
-Dot vs Bracket Notation
-Iterate objects
-Computed properties
-Spread operator in objects
-Object Destructuring
+# Objects in JavaScript
+- Intro to objects
+- Dot vs Bracket Notation
+- Iterate objects
+- Computed properties
+- Spread operator in objects
+- Object Destructuring
 Objects inside Array
 Nested Destructuring
 

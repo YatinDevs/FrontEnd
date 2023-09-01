@@ -42,10 +42,10 @@
 - Computed properties
 - Spread operator in objects
 - Object Destructuring
-Objects inside Array
-Nested Destructuring
+- Objects inside Array
+- Nested Destructuring
 
-Functions in JavaScript
+# Functions in JavaScript
 Function declaration
 Function Expression
 Arrow Functions

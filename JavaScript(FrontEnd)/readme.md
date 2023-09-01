@@ -43,8 +43,8 @@
 - Computed properties
 - Spread operator in objects
 - Object Destructuring
-Objects inside Array
-Nested Destructuring
+- Objects inside Array
+- Nested Destructuring
 
 Functions in JavaScript
 Function declaration

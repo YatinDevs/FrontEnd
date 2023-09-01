@@ -46,23 +46,24 @@
 - Nested Destructuring
 
 # Functions in JavaScript
-Function declaration
-Function Expression
-Arrow Functions
-Function declarations are hoisted  (covered in great detail , later in this course)
-Function inside function
-Lexical Scope
-Block Scope Vs Function Scope
-Default Parameters
-Rest Parameters
-Parameter Destructuring
-Very brief intro to callback functions(covered in great detail , later in the course)
-Functions returning Functions 
+- Function declaration
+- Function Expression
+- Arrow Functions
+- Function declarations are hoisted  (covered in great detail , later in this course)
+- Function inside function
+- Lexical Scope
+- Block Scope Vs Function Scope
+- Default Parameters
+- Rest Parameters
+- Parameter Destructuring
+- Very brief intro to callback functions(covered in great detail , later in the course)
+- Functions returning Functions 
 
-Very Important Array Methods
-Foreach method
-Map method
-Filter
+ # Very Important Array Methods
+
+- Foreach method
+- Map method
+- Filter
 Reduce
 Sort
 Find

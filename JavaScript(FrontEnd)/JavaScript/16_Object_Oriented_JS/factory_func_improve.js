@@ -241,5 +241,9 @@ Syntax: (object.__proto__)
 
 - proto property that is set to an object when it is created using a new keyword.
  All objects behavior newly created have proto properties.
- 
+
 */
+
+console.log(obj2.__proto__); // proto properties 
+// Obj2 proto is set to obj1
+// so proto give access to obj1

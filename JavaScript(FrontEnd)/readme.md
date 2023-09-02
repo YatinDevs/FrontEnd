@@ -1,4 +1,4 @@
-# JavaScript Concepts Present Here :
+# JavaScript Concepts:
 # Basics of Programming in JavaScript
 - Hello world program
 - Declare variable using var
@@ -56,53 +56,53 @@
 - Block Scope Vs Function Scope
 - Default Parameters
 - Rest Parameters
-Parameter Destructuring
-Very brief intro to callback functions(covered in great detail , later in the course)
-Functions returning Functions 
+- Parameter Destructuring
+- Very brief intro to callback functions(covered in great detail , later in the course)
+- Functions returning Functions 
 
-Very Important Array Methods
-Foreach method
-Map method
-Filter
-Reduce
-Sort
-Find
-Every
-Some
-Fill method
-Splice method
-
-
-More useful things 
-Iterables
-Sets
-Maps
-Object.assign
-Optional chaining
+# Very Important Array Methods
+- Foreach method
+- Map method
+- Filter
+- Reduce
+- Sort
+- Find
+- Every
+- Some
+- Fill method
+- Splice method
 
 
-Object Oriented JavaScript / Prototypal Inheritance
-Methods
-This keyword, Window object
-Call , apply and bind method
-Some warnings
-This inside arrow functions
-Short syntax for methods
-Factory functions & discuss some memory related problems
-First solution to that problem
-Why that solution isn’t that great
-What is __proto__ , [[prototype]]
-What is prototype
-Use prototype
-New keyword
-Constructor function with new keyword
-More discussion about proto and prototype
-Class keyword
-Example using class keyword
-Super keyword
-Method overriding
-Getters and setters
-Static methods and properties
+# More useful things 
+- Iterables
+- Sets
+- Maps
+- Object.assign
+- Optional chaining
+
+
+#Object Oriented JavaScript / Prototypal Inheritance
+- Methods
+- This keyword, Window object
+- Call , apply and bind method
+- Some warnings
+- This inside arrow functions
+- Short syntax for methods
+- Factory functions & discuss some memory related problems
+- First solution to that problem
+- Why that solution isn’t that great
+- What is __proto__ , [[prototype]]
+- What is prototype
+- Use prototype
+- New keyword
+- Constructor function with new keyword
+- More discussion about proto and prototype
+- Class keyword
+- Example using class keyword
+- Super keyword
+- Method overriding
+- Getters and setters
+- Static methods and properties
 
 How JavaScript Works
 Global Execution context

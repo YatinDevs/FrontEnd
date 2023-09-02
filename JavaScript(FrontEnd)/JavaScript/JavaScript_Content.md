@@ -64,13 +64,13 @@
 - Foreach method
 - Map method
 - Filter
-Reduce
-Sort
-Find
-Every
-Some
-Fill method
-Splice method
+- Reduce
+- Sort
+- Find
+- Every
+- Some
+- Fill method
+- Splice method
 
 
 More useful things 

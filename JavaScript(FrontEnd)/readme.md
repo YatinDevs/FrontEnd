@@ -81,7 +81,7 @@
 - Optional chaining
 
 
-#Object Oriented JavaScript / Prototypal Inheritance
+# Object Oriented JavaScript / Prototypal Inheritance
 - Methods
 - This keyword, Window object
 - Call , apply and bind method
@@ -104,7 +104,7 @@
 - Getters and setters
 - Static methods and properties
 
-How JavaScript Works
+# How JavaScript Works
 Global Execution context
 This and window in global execution context
 Hoisting
@@ -116,7 +116,7 @@ Closure example 1
 Closure Example 2
 Closure Example 3
 
-DOM Tutorial
+# DOM Tutorial
 
 HTML and CSS Crash course ( Around 30-40 minutes)
 Async vs defer
@@ -148,7 +148,7 @@ Event Capturing
 Event delegation 
 Create Project using event delegation
 
-Asynchronous JavaScript
+# Asynchronous JavaScript
 Is Javascript a synchronous or asynchronous programming language ? 
 SetTimeout()
 SetTimeout() with 0 millisecond

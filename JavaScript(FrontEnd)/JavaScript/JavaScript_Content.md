@@ -73,12 +73,12 @@
 - Splice method
 
 
-More useful things 
-Iterables
-Sets
-Maps
-Object.assign
-Optional chaining
+# More useful things 
+- Iterables
+- Sets
+- Maps
+- Object.assign
+- Optional chaining
 
 
 Object Oriented JavaScript / Prototypal Inheritance

@@ -81,7 +81,7 @@
 - Optional chaining
 
 
-Object Oriented JavaScript / Prototypal Inheritance
+# Object Oriented JavaScript / Prototypal Inheritance
 Methods
 This keyword, Window object
 Call , apply and bind method

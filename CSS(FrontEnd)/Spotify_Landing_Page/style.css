@@ -1,0 +1,138 @@
+/* css code goes here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body{
+    margin: 0;
+    background-color:rgb(25, 20, 20);
+    font-family:"Poppins", sans-serif;
+    font-weight: 300,500,700;
+}
+
+.navbar{
+    background-color: rgb(25, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 25px;
+
+}
+
+.navbar img{
+    height: 60px;
+    width: 60px;
+}
+
+.navbar ul{
+    display: flex;
+   list-style: none;
+   gap:15px;
+
+}
+.navbar li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s;
+
+}
+
+.navbar li a:hover{
+    color: rgb(30, 215, 96);
+}
+
+/* --------------------- Main Section -------------------------------- */
+
+#download{
+    background-color:rgb(25, 20, 20);
+    text-align: center;
+    color:rgb(255, 255, 255);
+    padding: 10px 20px;
+}
+
+#download h1{
+    font-weight: 700;
+    line-height: 2;
+
+}
+
+#download h2{
+     font-weight: 500;
+     line-height: 3;
+}
+
+#download button {
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    margin-bottom: 35px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family:"Poppins", sans-serif;
+    transition: transform 0.3s;
+
+
+}
+
+#download button:hover{
+    transform: scale(1.02);
+}
+
+@media (max-width:650px){
+
+    #download button{
+        width: 100%;
+    }
+}
+
+/*     difference table         */
+
+#difference-table{
+
+     background-color:  rgb(246, 246, 246);
+     text-align: center;
+     padding: 20px 40px;
+
+}
+
+#difference-table h1{
+    font-weight: 700;
+    padding: 0px 50px;
+
+}
+
+
+#difference-table table{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 45px;
+
+
+}
+
+#difference-table table tr th{
+    font-weight: 300;
+}
+
+#difference-table table tr td{
+    border-bottom: 1px solid rgb(170,170,170);
+}
+
+.fa-circle-check{
+   color:  rgb(30, 215, 96);
+   font-size: 30px;
+}
+.fa-circle-xmark{
+    color: rgb(255,0,0);
+     font-size: 30px;
+
+}
+
+#difference-table section button{
+    background-color: rgb(25,20,20);
+    padding: 12px 40px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family:"Poppins", sans-serif;
+    color:rgb(255, 255, 255);
+}

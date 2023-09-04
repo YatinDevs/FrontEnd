@@ -99,11 +99,11 @@
 - New keyword
 - Constructor function with new keyword
 - More discussion about proto and prototype
-Class keyword
-Example using class keyword
-Super keyword
-Method overriding
-Getters and setters
+- Class keyword
+- Example using class keyword
+- Super keyword
+- Method overriding
+- Getters and setters
 Static methods and properties
 
 How JavaScript Works

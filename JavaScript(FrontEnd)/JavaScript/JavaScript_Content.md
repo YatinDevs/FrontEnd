@@ -94,11 +94,11 @@
 - First solution to that problem
 - Why that solution isn’t that great
 - What is __proto__ , [[prototype]]
-What is prototype
-Use prototype
-New keyword
-Constructor function with new keyword
-More discussion about proto and prototype
+- What is prototype
+- Use prototype
+- New keyword
+- Constructor function with new keyword
+- More discussion about proto and prototype
 Class keyword
 Example using class keyword
 Super keyword

@@ -128,6 +128,7 @@ console.log(firstName); // Yatin
 
    Whenever a Function is Called a NEw Execution Context is cReated for that
    function.
-   
+
+   Read : Newton School Dairy Of Notes:
  
 */

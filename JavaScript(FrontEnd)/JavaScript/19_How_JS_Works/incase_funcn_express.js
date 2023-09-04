@@ -1,4 +1,4 @@
-// What Happens to Function Declaration??
+// What Happens to Function Expression??
 
 
 
@@ -26,20 +26,16 @@
 
 */
 // Global Scope (Outer Scope)
-console.log(this);
-console.log(window);
+
 console.log(myfunction);
-console.log(full_name);
+
 
 // Lexically (function is inside Global Scope)
-function myfunction(){
+var myfunction = function(){           // Anonoymous Function Expression
     console.log("this. is my Function!!");
 }
+console.log(myfunction);
 
-var first_name = "Yatin";
-var last_name = "Chaudhari";
-var full_name = first_name + "  " + last_name;
-console.log(full_name);
 
 // Code Flow : Analysing Code 
 
@@ -47,10 +43,8 @@ console.log(full_name);
 
 // In Global Scope we Have:
 /*
-    1. first_name
-    2. last_name
-    3. full_name
-    4. myfunction()
+ 
+    1. myfunction()
 
     we Have following Things JS gets knowledge about it
 */
@@ -75,29 +69,26 @@ console.log(full_name);
                                                         object here.)
                                                     this : window{}
  
-                                                    1. first_name :undefined
-                                                    2. last_name :undefined
-                                                    3. full_name : undefined
-                                                    4. myfunction(): (function)->
+                                                  // will be treated as variable
+                                                    1. myfunction(): undefined
+                                                    //(its stored as var and 
+                                                    function Expression is used.
+                                                    not function declaration.)
 
-    Code Execution Phase :                                   console:
+  2//  Code Execution Phase :                                   console:
 
-1.console.log(this);                                        window object printed
-2.console.log(window);                                      window object printed
-3.console.log(myfunction); (will check in Global memory)   ( it is stored as function)
-                                                           so that function is printed.
-4.console.log(full_name);  (will check in Global memory)   (it is undefined)
-                                                            so undefined printed
 
-5. function myfunction(){                              
-    console.log("this. is my Function!!");                 (nothing here as it is 
-                                                          present in Global memory.)
-}
+1. console.log(myfunction);                            undefined printed .
 
-6.var first_name = "Yatin";                               (setting in Global Memory)
-7.var last_name = "Chaudhari";                            (setting in Global Memory)
-8.var full_name = first_name + "  " + last_name;          (setting in Global Memory)
-9.console.log(full_name);                                  Yatin Chaudhari. (printed)
+
+2. var myfunction = function(){                       changes in Global Memory
+        console.log("this. is my Function!!");
+ }
+
+3. console.log(myfunction);                           Full function will be Printed
+                                                   ƒ (){          
+                                                   console.log("this. is my Function!!");
+                                                   }
 
                                                    (After Code Execution)
                                                     In Global Memory :
@@ -109,10 +100,8 @@ console.log(full_name);
                                                         object here.)
                                                     this : window{}
  
-                                                    1. first_name : Yatin
-                                                    2. last_name : Chaudhari
-                                                    3. full_name : Yatin + " " + Chaudhari.
-                                                    4. myfunction(): (function)->
+                                                   
+                                                    1. myfunction(): (function)->
 
 
     Global Execution Context is Popped after completion of Code Execution .
@@ -124,5 +113,4 @@ console.log(full_name);
 
 
 
-// 2 Code Execution Phase
 

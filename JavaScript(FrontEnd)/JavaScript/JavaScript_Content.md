@@ -107,10 +107,10 @@
 - Static methods and properties
 
 # How JavaScript Works
-Global Execution context
-This and window in global execution context
-Hoisting
-Are let and const are hoisted ? What is a reference Error ? 
+- Global Execution context
+- This and window in global execution context
+- Hoisting
+- Are let and const are hoisted ? What is a reference Error ? 
 Function execution context
 Scope chain and lexical environment
 Intro to closures

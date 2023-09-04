@@ -22,17 +22,18 @@
 // }
 
 
-function createUser(first_name,last_name,email,age,address){
+
+// Constructor FUnction ---> constructing Object
+// Convention Captial start letter which function are called using new keyword
+function CreateUser(first_name,last_name,email,age,address){
       
-    const user = Object.create(createUser.prototype);
-    user.first_name = first_name,
-    user.last_name = last_name,
-    user.email = email,
-    user.age = age,
-    user.address = address
+    this.first_name = first_name,
+    this.last_name = last_name,
+    this.email = email,
+    this.age = age,
+    this.address = address
 
 
-    return user;
 }
 
 // ---> We already have prototype so lets add function  here instead of 
@@ -40,39 +41,60 @@ function createUser(first_name,last_name,email,age,address){
 // console.log(createUser.prototype);
 //
 
-createUser.prototype.about=function(){
+CreateUser.prototype.about=function(){
  return `${this.first_name}  ${this.last_name} is ${this.age} years old.`;
 }
 
-createUser.prototype. is18 = function(){
+CreateUser.prototype. is18 = function(){
             return this.age>=18;
         }
 
-createUser.prototype.sing = function(){
+CreateUser.prototype.sing = function(){
             return 'abc efg hijk lmno lmno pq rs t u v w';
         }
 
 
-console.log(createUser.prototype);
+console.log(CreateUser.prototype);
 
 
 
 
 
-// const user1= createUser("Yatin","chaudhari","c.yatin727@gmail.com",25,"home,building,pincode,state");
-// console.log(user1);
-// const is18 = user1.is18();
-// console.log(is18);
-// const about = user1.about();
-// console.log(about);
+const user1= new CreateUser("Yatin","chaudhari","c.yatin727@gmail.com",25,"home,building,pincode,state");
+console.log(user1);
+const is18 = user1.is18();
+console.log(is18);
+const about = user1.about();
+console.log(about);
 
-// __proto__ is Reference
+
+// [[prototype]] is Reference
 // prototype is empty object where methods and properties can be added
 
 
 // --------------------------------------
 
 /*
-    New keyword
+    New keyword :
+
+    New keyword in JavaScript is used to create an instance of an object that has
+     a constructor function. On calling the constructor function with ‘new’ 
+     operator, the following actions are taken:
+
+    1.  A new empty object is created.
+
+    2 . The new object’s internal ‘Prototype’ property (__proto__) is set the
+     same as the prototype of the constructing function.
+
+    3. The ‘this’ variable is made to point to the newly created object. 
+    It binds the property which is declared with ‘this’ keyword to the new object.
+    bout the returned value, there are three situations below. 
  
 */
+
+//  New Keyword
+
+// Creates Empty object
+// Return {} constructor
+// function has prototype  and when we set proto of that function is is auto 
+// set to its prototype

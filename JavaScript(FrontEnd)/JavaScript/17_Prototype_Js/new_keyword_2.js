@@ -32,6 +32,7 @@ function CreateUser(first_name,last_name,email,age,address){
     this.email = email,
     this.age = age,
     this.address = address
+    return this;
 
 
 }

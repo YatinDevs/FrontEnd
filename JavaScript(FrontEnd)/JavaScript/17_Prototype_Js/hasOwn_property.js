@@ -12,6 +12,7 @@ function CreateUser(first_name,last_name,email,age,address){
     this.email = email,
     this.age = age,
     this.address = address
+    return this;
 
 
 }
@@ -80,7 +81,7 @@ for(let key in user1){
   The hasOwnProperty() method in JavaScript is used to check whether the object
    has the specified property as its own property. This is useful for checking 
    if the object has inherited the property rather than being it’s own.
-   
+
   Return Value: It returns a boolean value indicating whether the object has the 
   given property as its own property.
 */

@@ -119,7 +119,7 @@
 # DOM Tutorial
 
 - HTML and CSS Crash course ( Around 30-40 minutes)
-Async vs defer
+- Async vs defer
 Select elements using id
 querySelector
 textContent & innerText

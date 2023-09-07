@@ -120,21 +120,21 @@
 
 - HTML and CSS Crash course ( Around 30-40 minutes)
 - Async vs defer
-Select elements using id
-querySelector
-textContent & innerText
-Change the styles of elements using js
-Get and set attributes
-Select multiple elements and loop through them
-innerHTML
-Deeply understand dom tree, root node , element nodes, text nodes
-classList
-Add new elements to page
-Create elements
-Insert adjacent elements
-Clone nodes
-More methods to add elements on page
-How to get the dimensions of the element
+- Select elements using id
+- querySelector
+- textContent & innerText
+- Change the styles of elements using js
+- Get and set attributes
+- Select multiple elements and loop through them
+- innerHTML
+- Deeply understand dom tree, root node , element nodes, text nodes
+- classList
+- Add new elements to page
+- Create elements
+- Insert adjacent elements
+- Clone nodes
+- More methods to add elements on page
+- How to get the dimensions of the element
 Intro to events
 This keyword inside eventListener callback
 Add events on multiple elements

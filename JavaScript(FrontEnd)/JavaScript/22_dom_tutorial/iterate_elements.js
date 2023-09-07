@@ -34,7 +34,7 @@ console.log(navItems[1]);
 
 
 // ################################################################################################
-//                                   Iterate Elements
+//              Iterate Elements - using  getElementbyClassname / getElementbyTagName
 // ################################################################################################
 
 
@@ -140,3 +140,68 @@ anchorTags.forEach((anchorTag)=> {
 });
 
 */
+
+
+
+// ################################################################################################
+//              Iterate Elements - using  querySelectorAll .
+// ################################################################################################
+
+
+let anchorTags = document.querySelectorAll("a");
+
+console.log(anchorTags);
+// querySelectorAll Returns Nodelist
+
+// InCase of NodeList ---- > All 3 works :
+// 1.Simple for loop
+// 2.for of loop
+// 3.for each 
+
+// 1.Simple for loop
+
+/*
+for(let i = 0; i < anchorTags.length;i++){
+    const anchorTag = anchorTags[i];
+    anchorTag.style.backgroundColor = "#fff"; // changed
+    anchorTag.style.color="green"; // No change as text is inside li a i.e anchor tag
+    anchorTag.style.fontWeight="bold"; 
+
+}
+*/
+
+/*
+// 2.for of loop
+
+for(let anchorTag of anchorTags){
+    anchorTag.style.color = "purple";
+    anchorTag.style.backgroundColor = "#fff";
+    anchorTag.style.fontWeight = "bold";
+
+}
+
+*/
+
+/*
+
+// 3.for each Method --> can be used in case of NodeList
+
+anchorTags.forEach((anchorTag)=> {
+    anchorTag.style.color = "purple";
+    anchorTag.style.backgroundColor = "#fff";
+    anchorTag.style.fontWeight = "bold";
+
+});
+
+*/
+
+
+/* Converting Nodelist in Array */
+
+/*
+anchorTags = Array.from(anchorTags); // Convert Nodelist --> Array
+
+console.log(Array.isArray(anchorTags)); // True
+
+*/
+

@@ -111,22 +111,22 @@
 - This and window in global execution context
 - Hoisting
 - Are let and const are hoisted ? What is a reference Error ? 
-Function execution context
-Scope chain and lexical environment
-Intro to closures
-Closure example 1
-Closure Example 2
-Closure Example 3
+- Function execution context
+- Scope chain and lexical environment
+- Intro to closures
+- Closure example 1
+- Closure Example 2
+- Closure Example 3
 
 # DOM Tutorial
 
-HTML and CSS Crash course ( Around 30-40 minutes)
-Async vs defer
-Select elements using id
-querySelector
-textContent & innerText
-Change the styles of elements using js
-Get and set attributes
+- HTML and CSS Crash course ( Around 30-40 minutes)
+- Async vs defer
+- Select elements using id
+- querySelector
+- textContent & innerText
+- Change the styles of elements using js
+- Get and set attributes
 Select multiple elements and loop through them
 innerHTML
 Deeply understand dom tree, root node , element nodes, text nodes

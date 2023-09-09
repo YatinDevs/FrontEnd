@@ -127,13 +127,14 @@
 - textContent & innerText
 - Change the styles of elements using js
 - Get and set attributes
-Select multiple elements and loop through them
-innerHTML
-Deeply understand dom tree, root node , element nodes, text nodes
-classList
-Add new elements to page
-Create elements
-Insert adjacent elements
+- Select multiple elements and loop through them
+- innerHTML
+- Deeply understand dom tree, root node , element nodes
+- text nodes
+- classList
+- Add new elements to page
+- Create elements
+- Insert adjacent elements
 Clone nodes
 More methods to add elements on page
 How to get the dimensions of the element

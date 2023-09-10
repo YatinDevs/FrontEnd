@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+
+}
+
+h1{
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #efefef;
+    border-radius: 1rem;
+
+}
+
+button{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 1rem; 
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: background 0.4s;
+}
+button:hover{
+    background-color: rgb(214,214,214);
+}

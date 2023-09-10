@@ -135,21 +135,22 @@
 - Add new elements to page
 - Create elements
 - Insert adjacent elements
-Clone nodes
-More methods to add elements on page
-How to get the dimensions of the element
-Intro to events
-This keyword inside eventListener callback
-Add events on multiple elements
-Event object
-How event listener works
-Practice with events
-Create demo project
-More events
-Event bubbling
-Event Capturing
-Event delegation 
-Create Project using event delegation
+- Clone nodes
+- More methods to add elements on page
+- How to get the dimensions of the element
+
+- Intro to events
+- This keyword inside eventListener callback
+- Add events on multiple elements
+- Event object
+- How event listener works
+- Practice with events
+- Create demo project
+- More events
+- Event bubbling
+- Event Capturing
+- Event delegation 
+- Create Project using event delegation
 
 # Asynchronous JavaScript
 Is Javascript a synchronous or asynchronous programming language ? 

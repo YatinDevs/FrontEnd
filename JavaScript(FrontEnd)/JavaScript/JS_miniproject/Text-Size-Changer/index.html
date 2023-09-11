@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#text {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Text Size Changer</h1>
+        
+        <p id="text">This is some sample text.</p>
+    
+        <button id="increaseBtn">+</button>
+        <button id="decreaseBtn">-</button>
+    
+      </div>
+      <script>
+        // javascript code goes here
+
+const increaseBtn = document.querySelector("#increaseBtn");
+const decreaseBtn = document.querySelector("#decreaseBtn");
+const textElement = document.querySelector("#text");
+
+increaseBtn.addEventListener("click", increaseFontSize);
+decreaseBtn.addEventListener("click", decreaseFontSize);
+
+function increaseFontSize() {
+    const currentSize = parseInt(getComputedStyle(textElement).fontSize);
+    
+    const newSize = currentSize + 2;
+    
+    textElement.style.fontSize = newSize + "px";
+}
+
+function decreaseFontSize() {
+    const currentSize = parseInt(getComputedStyle(textElement).fontSize);
+    
+    const newSize = Math.max(currentSize - 2, 10);
+    
+    textElement.style.fontSize = newSize + "px";
+}
+      </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        background-color: aqua;
+
+    }
+    .container1{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+
+    }
+   </style>
+</head>
+<body>
+
+       <div class="container1">
+           
+       </div>
+        <div class="container">
+            <h2>Filter Fruits By Type</h2>
+            <select id="fruitType">
+                <option value="all">All</option>
+                <option value="citrus">Citrus</option>
+                <option value="berry">Berry</option>
+                <option value="stone">Stone Fruit</option>
+            </select>
+            <button id="filterBtn">Filter</button>
+            <ul id="fruitList">
+                <!-- Fruits will be displayed here -->
+            </ul>
+        </div>
+        <script>
+
+            
+       const fruits = [
+    { name: "Lemon", type: "citrus" },
+    { me: "Blueberry", type: "berry" },
+    { name: "Peach", type: "stone" },
+    { naname: "Orange", type: "citrus" },
+    { name: "Strawberry", type: "berry" },
+    { name: "Cherry", type: "stone" },
+      ];
+
+            
+            const filterButton = document.querySelector("#filterBtn");
+            const fruitSelected = document.getElementById("fruitType");
+            
+           filterButton.addEventListener("click",(e)=>{
+                 
+                e.preventDefault();
+               const selectedType = fruitSelected.value; 
+
+               const filteredFruits = fruits.filter((fruits)=>{
+                    
+                   if(selectedType === "all"){
+                     return fruits;
+                   }
+                   if(selectedType === fruits.type){
+                     return fruits;
+                   }
+
+               })
+ 
+          
+
+
+           const fruitList = document.getElementById("fruitList");
+           fruitList.innerHTML = ""; 
+           
+           
+           filteredFruits.forEach((fruit)=>{
+
+            const newli = document.createElement("li");
+            newli.textContent = fruit;
+            fruitList.append(newli);
+            
+           })
+           
+          });
+
+
+           </script>
+</body>
+
+</html>

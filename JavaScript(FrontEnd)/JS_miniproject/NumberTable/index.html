@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+      font-family: Arial, sans-serif;
+    }
+
+
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+      border-bottom: 1px solid;
+    }
+
+    .container{
+      max-width: 400px;
+      margin: 50px auto;
+      /* text-align: center; */
+      
+    }
+    
+    h1{
+      text-align: center;
+    }
+    input[type="number"]{
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h1>Number Table</h1>
+            <label for="number">Enter a Number:</label>
+            <input type="number" id="number" placeholder="Enter a Number">
+            <button id="generateTableBtn">Generate Table</button>
+             
+             <div id="output">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Multiplier</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+             </div>
+        </div>
+        <script>
+
+            const generateBtn = document.getElementById("generateTableBtn");
+            const numInput = document.getElementById("number");
+            const outputDiv = document.getElementById("output");
+
+            generateBtn.addEventListener("click",(e)=>{
+               e.preventDefault();
+
+               const number = numInput.value;
+               console.log(number);
+
+               if(!isNaN(number)){
+                       
+                  const table = document.createElement("table");
+                  const tbody = document.createElement("tbody");
+                  const thead = document.createElement("thead");
+
+                  const tablehrow = document.createElement("tr");
+                  const tableheader1 = document.createElement("th");
+                  const tableheader2 = document.createElement("th");
+                  
+                  tableheader1.textContent = "Multiplier";
+                  tableheader2.textContent = "Result";
+
+                  tablehrow.append(tableheader1);
+                  tablehrow.append(tableheader2);
+
+                  thead.append(tablehrow);
+                  table.append(thead);
+
+                  for(let i=1; i<=10;i++){
+                     const row = document.createElement("tr");
+                     const td1 = document.createElement("td");
+                     const td2 = document.createElement("td");
+
+                     td1.textContent = number;
+                     td2.textContent = number * i;
+
+                     row.append(td1);
+                     row.append(td2);
+                     tbody.append(row);
+                  }
+                  table.append(tbody);
+                  outputDiv.innerHTML = "";
+
+                  outputDiv.append(table);
+               }
+
+            })
+
+
+        </script>
+</body>
+</html>

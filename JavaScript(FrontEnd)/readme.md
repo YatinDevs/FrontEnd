@@ -1,4 +1,6 @@
 # JavaScript Concepts:
+- Files are Numbered from 1 Ownwards according to Content :
+- All Includes Implementation : Mini-Project Folder (With small practical Implementations).
 - All Content Inside :- https://github.com/YatinDevs/FrontEnd/tree/main/JavaScript(FrontEnd)/JavaScript
 # Basics of Programming in JavaScript
 - Hello world program

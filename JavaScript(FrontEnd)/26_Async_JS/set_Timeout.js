@@ -1,31 +1,3 @@
-// Synchronous Programming vs Asynchronous Programming
-
-// 1 .Synchronous Programming.
-// 2 .ASynchronous Programming.
-// 3 .setTimeout()  Method .
-
-// JavaScript is Synchronous Programming Language and Single Threaded.
-
-/*
-console.log("script Start");
-
-for(let i = 1; i< 10000; i++){
-    console.log("inside for Loop");
-}
-
-console.log("script end");
-*/
-
-/*
-   What is synchronous in programming?
-What Does Synchronous Mean In Programming? Synchronicity in programming happens 
-when the execution of operations is done sequentially. An operation will only be 
-executed after the previous one is done. This means that a potentially complex task
- may take a while before all its steps are executed and completed.
-
-
-*/
-
 
 // setTimeout function
 

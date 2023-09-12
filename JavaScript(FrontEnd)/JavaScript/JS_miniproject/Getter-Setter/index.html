@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="getter-setter.js" defer></script>
     <style>
         body {
     font-family: Arial, sans-serif;
@@ -38,72 +39,6 @@ button {
             
             <p id="bookDetails">Book Details will appear here...</p>
         </div>
-        <script>
-   
-class Book {
-   
-     #title;
-     #price;
-
-    constructor() {
-       this.#title = '';
-       this.#price = 0;
-    }
-
-    get title() {
-
-       return this.#title;
-    }
-
-    set title(newtitle) {
-        if (newtitle.trim() === '') {
-        throw new Error('Invalid title.');
-        }
-        this.#title = newtitle;
-    }
-
-    get price() {
-        return this.#price;
-    }
-
-    set price(newPrice) {
-        if (isNaN(newPrice) || newPrice <= 0) {
-         throw new Error('Invalid price. Price must be a positive number.');
-        }
-        this.#price = newPrice;
-    }
-}
-
-
-const currentBook = new Book();
-  
-const setBtn = document.getElementById("setBtn");
-const getBtn = document.getElementById("getBtn");
-
-setBtn.addEventListener("click",(e)=>{
-  e.preventDefault();
-const titleInput = document.getElementById("title").value;
-const priceInput = document.getElementById("price").value;
-
-try{
-    currentBook.title = titleInput;
-    currentBook.price = priceInput;
-}catch(error){
-  alert(error.message);
-}
-
-
-});
-
-getBtn.addEventListener("click",(e)=>{
-    e.preventDefault();
-  const  bookDetails = document.getElementById("bookDetails");
-  bookDetails.textContent=`Title : ${currentBook.title}, Price : $${currentBook.price}`;
-   
-});
-
-
-</script>
-
+    
 </body>
 </html>

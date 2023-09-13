@@ -1,4 +1,4 @@
-// What Happens to Function Expression??
+// Are let and const are Hoisted??
 
 
 
@@ -27,14 +27,9 @@
 */
 // Global Scope (Outer Scope)
 
-console.log(myfunction);
-
-
-// Lexically (function is inside Global Scope)
-var myfunction = function(){           // Anonoymous Function Expression
-    console.log("this. is my Function!!");
-}
-console.log(myfunction);
+// console.log(firstName);
+let firstName = "Yatin"
+console.log(firstName);
 
 
 // Code Flow : Analysing Code 
@@ -44,7 +39,7 @@ console.log(myfunction);
 // In Global Scope we Have:
 /*
  
-    1. myfunction()
+    1. let firstName 
 
     we Have following Things JS gets knowledge about it
 */
@@ -53,9 +48,9 @@ console.log(myfunction);
 //    and looking at the code.
 
 /*
-    We Have Stack
+   ################  We Have Stack with GEC #####################
 
-    Global ExecutionContext (by default added to Stack).
+    Global Execution Context (by default added to Stack).
     Even before code is Executed it is created with certain things are provided:
 
     So Inside GlobalExecution Context :
@@ -68,27 +63,33 @@ console.log(myfunction);
                                                         this binded with window
                                                         object here.)
                                                     this : window{}
- 
-                                                  // will be treated as variable
-                                                    1. myfunction(): undefined
-                                                    //(its stored as var and 
-                                                    function Expression is used.
-                                                    not function declaration.)
+                                                     
+                                                    firstName : uninitialized
+                                                (Created in memory 
+                                                but uninitialized -> cannot be used
+                                                until it is Initialized 
+                                                (throws Uncaught Reference Error:))
+                                                
+                                                // Hoisting is done but is uninitialized
+                                                // useless until initialization
+                                                    
 
   2//  Code Execution Phase :                                   console:
 
 
-1. console.log(myfunction);                            undefined printed .
+1.console.log(firstName);                             (we have it in memory)
+                                                       (Created in memory 
+                                                but uninitialized -> cannot be used
+                                                until it is Initialized 
+                                                (throws Uncaught Reference Error:))
+                                                
+                                                // Hoisting is done but is uninitialized
+                                                // useless until initialization
+     // InCase 1st line didnt exist.                                               
 
-
-2. var myfunction = function(){                       changes in Global Memory
-        console.log("this. is my Function!!");
- }
-
-3. console.log(myfunction);                           Full function will be Printed
-                                                   ƒ (){          
-                                                   console.log("this. is my Function!!");
-                                                   }
+2.let firstName = "Yatin"                               initialized in memory
+3.console.log(firstName);                                Yatin printed 
+                     
 
                                                    (After Code Execution)
                                                     In Global Memory :
@@ -101,16 +102,64 @@ console.log(myfunction);
                                                     this : window{}
  
                                                    
-                                                    1. myfunction(): (function)->
+                                                    2. firstName : Yatin
 
 
-    Global Execution Context is Popped after completion of Code Execution .
+  #######  Global Execution Context is Popped after completion of Code Execution From Stack.##########
 
-                                                    
+                  
+  // let and const hoisting occurs
 
 */
+/**
+ 
+ let_const_hoisted_.js:30 Uncaught ReferenceError: Cannot access 'firstName' before initialization
+
+
+let_const_hoisted_.js:30 Uncaught ReferenceError: firstName is not defined
+
+
+TDZ ---> Temporal Dead Zone : 
+A temporal dead zone (TDZ) is the block where a variable is inaccessible until the moment the 
+computer initializes it with a value. A block can be defined as a pair of braces ({...}) 
+used to accumulate multiple statements. Initialization occurs when one assigns an initial 
+value to a variable.
+
+
+console.log(firstName);                     ..,, value uninitialized
+
+  Error :
+ let_const_hoisted_.js:30 Uncaught ReferenceError: Cannot access 'firstName' before initialization
+
+
+let firstName = "Yatin"                     ... value initialized to Yatin
+console.log(firstName);
+
+What is the temporal dead zone for VAR and let?
+Temporal dead zone (TDZ)
+
+A variable declared with let , const , or class is said to be in a "temporal dead zone" (TDZ)
+ from the start of the block until code execution reaches the place where the variable is 
+ declared and initialized.
 
 
 
 
 
+ */
+
+
+
+
+
+// In Case of let
+// let first_name; // Undefined
+// console.log(first_name);
+
+// In case of Const :
+// const first_name; // Uncaught SyntaxError: Missing initializer in const declaration
+// console.log(first_name);
+
+
+console.log(typeof first_name); //  Uncaught ReferenceError: Cannot access 'first_name' before initialization
+let first_name= "Yatin";

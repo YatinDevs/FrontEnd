@@ -26,15 +26,18 @@
 
 */
 // Global Scope (Outer Scope)
-console.log(this);
-console.log(window);
-console.log(myfunction);
-console.log(full_name);
+// console.log(this);
+// console.log(window);
+// console.log(myfunction)
+// console.log(full_name);
 
 // Lexically (function is inside Global Scope)
 function myfunction(){
-    console.log("this. is my Function!!");
+    
+    console.log("this. is my Function!!",this);
+
 }
+
 
 var first_name = "Yatin";
 var last_name = "Chaudhari";

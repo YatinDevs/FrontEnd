@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="getter-setter.js" defer></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+        <div class="container">
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" placeholder="Enter book title...">
+            
+            <label for="price">Book Price:</label>
+            <input type="number" id="price" placeholder="Enter book price...">
+            
+            <button id="setBtn">Set Details</button>
+            <button id="getBtn">Get Details</button>
+            
+            <p id="bookDetails">Book Details will appear here...</p>
+        </div>
+    
+</body>
+</html>

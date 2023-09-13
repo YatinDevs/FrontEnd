@@ -22,3 +22,15 @@
 // 1.) xmlHTTPRequest  (old way of doing).
 // 2.) fetch API (new way of doing).
 // 3.) axios (this is third party library.)
+
+
+/*
+  AJAX is a developer's dream, because you can:
+
+- Read data from a web server - after a web page has loaded
+- Update a web page without reloading the page
+- Send data to a web server - in the background
+
+https://www.w3schools.com/whatis/whatis_ajax.asp
+
+*/

@@ -26,7 +26,6 @@ executed after the previous one is done. This means that a potentially complex t
 
 */
 
-
 // setTimeout function
 
 /*
@@ -92,7 +91,7 @@ An event loop is something that pulls stuff out of the queue and places
  it onto the function execution stack whenever the function stack becomes 
  empty.
 
-*/ 
+*/
 
 /*
 console.log("start Script");
@@ -109,21 +108,19 @@ for(let i = 1; i< 10000; i++){
 console.log("Script Ends");
 */
 
-
 // Use the clearTimeout() method to prevent the function from starting.
 
-console.log("start Script");
+console.log('start Script')
 
-const id = setTimeout(()=>{
-    console.log("inside Timeout Function");
-},0);
+const id = setTimeout(() => {
+  console.log('inside Timeout Function')
+}, 0)
 
-
-for(let i = 1; i< 10000; i++){
-    console.log("....");
+for (let i = 1; i < 10000; i++) {
+  console.log('....')
 }
 
-console.log("settime out id is ",id);
-console.log("clearing time out ");
-clearTimeout(id);
-console.log("Script Ends");
+console.log('settime out id is ', id)
+console.log('clearing time out ')
+clearTimeout(id)
+console.log('Script Ends')

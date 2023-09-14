@@ -105,6 +105,8 @@ decoratedhello();
 decoratedhi();
 */
 // ============================================================================================
+/*
+
 function decorator(func){
     return function(...args){
         console.log(`you are calling decorated function : ${func.name}`);
@@ -121,7 +123,7 @@ function hello(){
 
 const decoratedhi = decorator(hi);
 decoratedhi("Yatin");
-
+*/
 /*
 what is a decorator function?
 
@@ -132,3 +134,29 @@ extends the behavior of the latter function without explicitly modifying it.
 
 
 */
+
+//=======================================================================================================================
+
+function debounce(func,delay){
+
+    return function(...args){
+        let timeoutID;
+        if(timeoutID){
+            clearTimeout(timeoutID);
+        }
+        timeoutID = setTimeout(()=>{
+            func.call(this,...args); 
+        },delay);     
+    }
+}
+
+const myInput = document.getElementById("input-event");
+
+
+function findSuggestion(e){
+    console.log("suggestions for " ,e.target.value);
+}
+
+const decoratedFunc = debounce(findSuggestion,300);
+
+myInput.addEventListener("input",decoratedFunc);

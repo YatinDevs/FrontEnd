@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Outfit:wght@400;700&family=Poppins:wght@200;400;500;700&family=Public+Sans:wght@300;400;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*     
+## Colors
+
+### Primary */
+
+  --Tomato: hsl(4, 100%, 67%);
+
+  /* ### Neutral */
+
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background: var(--Dark-Slate-Grey);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin: auto;
+}
+.main-container {
+  background-color: var(--White);
+  width: 75%;
+  margin: 150px auto;
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 25px;
+}
+.text-area {
+  display: flex;
+  flex-direction: column;
+  /* align-items: space-between; */
+  justify-content: space-between;
+  /* margin: 2rem; */
+  padding: 2rem;
+  padding-right: 3.5rem;
+  padding-bottom: 4rem;
+}
+.text-area h1 {
+  font-size: 3.5rem;
+}
+
+.text-area input[type="email"],
+button {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+}
+
+.text-list {
+}
+
+.text-list img {
+}
+.text-list span {
+  display: block;
+  font-size: 1rem;
+}
+
+.img-container img {
+  width: 100%;
+}

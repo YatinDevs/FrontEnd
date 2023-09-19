@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+
+<body>
+  <header>
+    <img src="assets/images/logo.svg" alt="brand logo">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+  <main class="main">
+    <img src="assets/images/image-web-3-desktop.jpg" alt="hero image">
+    
+    <div class="content">
+      
+      <div>
+      <h1>The Bright Future of Web 3.0?</h1>
+
+      <div>
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+          But is it really fulfilling its promise?</p>
+
+        <button>Read more</button>
+
+      </div>
+
+    </div>
+
+    </div>
+  
+
+    <aside>
+      <h2>New</h2>
+      <section>
+        <p><b>Hydrogen VS Electric Cars</b></p>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </section>
+      <section>
+        <p><b>The Downsides of AI Artistry</b></p>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </section>
+      <section>
+        <p><b>Is VC Funding Drying Up?</b></p>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </section>
+
+    </aside>
+
+  </main>
+
+  <section class="bottom">
+    <article>
+      <img src="assets/images/image-retro-pcs.jpg" alt="retro pc thumbnail">
+      <div>
+        <h4>01</h4>
+        <p><b>Reviving Retro PCs</b></p>
+        <p>What happens when old PCs are given modern upgrades.</p>
+      </div>
+    </article>
+    <article>
+      <img src="assets/images/image-retro-pcs.jpg" alt="retro pc thumbnail">
+      <div>
+        <h4>01</h4>
+        <p><b>Reviving Retro PCs</b></p>
+        <p>What happens when old PCs are given modern upgrades.</p>
+      </div>
+    </article>
+    <article>
+      <img src="assets/images/image-retro-pcs.jpg" alt="retro pc thumbnail">
+      <div>
+        <h4>01</h4>
+        <p><b>Reviving Retro PCs</b></p>
+        <p>What happens when old PCs are given modern upgrades.</p>
+      </div>
+    </article>
+
+  </section>
+</main>
+</body>
+
+</html>

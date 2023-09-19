@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Outfit:wght@400;700&family=Poppins:wght@200;400;500;700&family=Public+Sans:wght@300;400;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+
+  /* ### Neutral */
+
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* - Mobile: 375px */
+/* - Desktop: 1440px */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+body {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.8rem;
+  width: 180px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  font-size: 1rem;
+  color: var(--White);
+  cursor: pointer;
+  background: hsl(136, 65%, 51%);
+  background: linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%));
+}
+
+/*  ####################### Nav bar (mobile) -> 375px width ####################### */
+.navbar {
+}
+
+.nav-container {
+  background: var(--White);
+  display: block;
+  /* position: fixed; */
+  width: 100%;
+  height: 60px;
+}
+
+.menu-items {
+  position: absolute;
+  top: 80px;
+  left: 5vw;
+  /* transform: translate(-50%); */
+  width: 90vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--White);
+  justify-content: space-between;
+  padding: 2rem;
+  font-weight: 500;
+  transform: translateY(-150%);
+  transition: transform 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.menu-items li {
+  list-style-type: none;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: var(--Dark-Blue);
+}
+
+.nav-btn {
+  display: none;
+}
+
+[alt="nav-logo"] {
+  display: block;
+  position: absolute;
+  top: 20px;
+
+  margin-left: 1rem;
+}
+
+.nav-container input[type="checkbox"] {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  height: 25px;
+  width: 35px;
+}
+
+.nav-container .nav-lines-open {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 30px;
+  width: 35px;
+}
+
+.nav-container .nav-lines-close {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 30px;
+  width: 35px;
+}
+
+.nav-lines line {
+  display: block;
+  height: 3px;
+  background: var(--Dark-Blue);
+}
+
+.nav-container input[type="checkbox"]:checked ~ label ~ .menu-items {
+  transform: translateY(0);
+}
+/* 
+.nav-container input[type="checkbox"]:checked .nav-lines-open svg {
+  display: none;
+} */
+
+/* ########################## main -area ####################################################*/
+
+.main-area {
+  text-align: center;
+}
+.main-area img {
+  width: 100%;
+}
+
+.main-area h1 {
+  color: var(--Dark-Blue);
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+.main-area p {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.main-area .btn {
+  padding: 0.8rem;
+  width: 180px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  font-size: 1rem;
+  color: var(--White);
+  cursor: pointer;
+  background: hsl(136, 65%, 51%);
+  background: linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%));
+}
+
+/* ##################### About Us ###################### */
+
+.aboutus {
+  /* margin-top: 5rem; */
+  background: var(--Very-Light-Gray);
+  display: flex;
+  flex-direction: column;
+}
+
+.abouthead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+.abouthead h1 {
+  font-weight: 300;
+  margin: 1rem;
+  color: var(--Dark-Blue);
+  font-size: 2rem;
+}
+
+.abouthead p {
+  font-size: 1rem;
+  color: var(--Grayish-Blue);
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about img {
+  padding: 1.5rem;
+}
+
+.about h2 {
+  font-weight: 300;
+  margin: 1rem;
+  color: var(--Dark-Blue);
+  font-size: 1.2rem;
+}
+
+.about p {
+  font-size: 1rem;
+  color: var(--Grayish-Blue);
+  line-height: 1.5rem;
+}
+
+.about4 {
+  margin-bottom: 3rem;
+}
+/* ######################### Footer Contact US #####################  */
+
+.contactus {
+  background: var(--Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        transform: translate(150px, 150px) rotate(80deg);
+
+        /* transform-origin: x-axis y-axis z-axis; */
+        /* transform-origin: ; */
+
+        /* Skew*/
+        /* transform: skew(30deg, -15deg); */
+
+        /* Matrix*/
+        /* transform: matrix(scaleX,skewX,skewY,scaleY,translateX,translateY); */
+      }
+
+      /* .parent:hover {
+        transform: scale(1.6);
+        cursor: pointer;
+      } */
+      .grandparent {
+        border: 2px solid black;
+        height: 100vh;
+        width: 100vw;
+      }
+      /*
+      @keyframes animation-name {
+        0% {
+          width: 10px;
+        }
+
+        50% {
+          width: 50px;
+        }
+
+        100% {
+          width: 100px;
+        }
+      } */
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        50% {
+          transform: rotate(180deg) scale(1.5);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .rotate {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        animation: spin 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="grandparent">
+      <div class="parent"></div>
+    </div> -->
+
+    <div class="rotate"></div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Loader</title>
+    <style>
+      @keyframes colorChange {
+        0% {
+          border-top-color: #3498db;
+        }
+
+        25% {
+          border-top-color: #e74c3c;
+        }
+
+        75% {
+          border-top-color: #4ff10f;
+        }
+        100% {
+          border-top-color: #3498db;
+        }
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        border: solid 5px transparent;
+        border-radius: 50%;
+        margin-top: -25px;
+        margin-left: -25px;
+        animation: rotate 2s linear infinite, colorChange 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>

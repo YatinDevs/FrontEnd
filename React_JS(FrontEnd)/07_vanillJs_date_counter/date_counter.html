@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Counter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="step">
+        <button class="decrease">-</button>
+        <span>Step : <span id="stepValue">1</span></span>
+        <button class="increase">+</button>
+      </div>
+      <div class="count">
+        <button class="decrease">-</button>
+        <span> Count : <span id="countValue">1</span></span>
+        <button class="increase">+</button>
+      </div>
+
+      <p class="date-today">Today is <span id="currentDate"></span></p>
+    </div>
+
+    <script>
+      let step = 1;
+      let count = 1;
+
+      function updateStep(value) {
+        step = step + value;
+        const stepSpan = document.getElementById("stepValue");
+        stepSpan.textContent = step;
+      }
+
+      function updateStep(value) {
+        count = count + value;
+        const countSpan = document.getElementById("countValue");
+        countSpan.textContent = count;
+      }
+
+      const date = new Date("September 21, 2021");
+
+      console.log(date);
+
+      const dateupdate = document.getElementsByClassName("date-today");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+/* 
+   In CSS Grid is very powerful two-dimensional layout System.
+   Flexbox is one-dimensional layout System.                    */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 100px auto; /* To center */
+
+  display: grid;
+  gap: 5px;
+
+  /*   
+  grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  /* fraction means remaining space will be occupied equal in notified fractions */
+  /* grid-template-rows: 100px 100px 100px; */
+  /* grid-auto-rows: 50px; Used More often */
+  /* gap: 5px; */
+
+  /* Variable columns*/
+  /* auto-fill , auto-fit */
+  /* grid-template-columns: repeat(auto-fill, 200px); */
+
+  /*  minmax(min,max) */
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.item {
+  border: 2px solid lightcoral;
+  padding: 2px;
+}

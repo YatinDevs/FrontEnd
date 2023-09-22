@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  margin: 0;
+  grid-gap: 10px;
+}
+
+.box-1 {
+  border: 2px solid lightcoral;
+  padding: 10px;
+  border-radius: 10px;
+}
+.box-2 {
+  border: 2px solid lightcoral;
+  padding: 10px;
+  border-radius: 10px;
+}

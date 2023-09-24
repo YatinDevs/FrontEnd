@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Developer-Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- /* ########## Hero Section ############################### */ -->
+
+      <section class="hero-section">
+        <div class="hero-text">
+          <h2>Hi , <span> I am Jon Doe</span></h2>
+          <h1>a Full Stack Developer”</h1>
+        </div>
+        <a class="down_arrow_container" href="#bottom-section">
+          <img src="images (1).png" alt="downward arrow" />
+        </a>
+      </section>
+      <!-- /* ################  Black Box Section ############################################ */ -->
+
+      <section class="black-box-section">
+        <div>
+          <h3>Work, I can do for <span>YOU</span></h3>
+        </div>
+      </section>
+      <!-- ######################   Card Section -->
+
+      <section class="card-container">
+        <div class="grid-item">
+          <div class="card card1">
+            <img
+              src="https://media.istockphoto.com/id/1061329170/photo/creativity-tutorials-website-concept-on-devices.jpg?s=612x612&w=0&k=20&c=agsBlAYN7EQ4sY4e54IvEwDgL_3jx53ILPa91rVGL-Y="
+              alt="card-1"
+            />
+            <div class="card-content">
+              <h3>Web Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores, nesciunt dicta deleniti velit eum tempora ea.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card card2">
+            <img
+              src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt="card-2"
+            />
+            <div class="card-content">
+              <h3>App Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                vero. Id assumenda dolorum numquam mollitia quisquam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="card card3">
+            <img
+              src="https://images.unsplash.com/photo-1603468620905-8de7d86b781e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="card-3"
+            />
+            <div class="card-content">
+              <h3>UI UX Design</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+                doloremque fuga unde dicta, nulla enim quae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ############  Bottom Section ########## -->
+
+      <section id="bottom-section" class="bottom-section">
+        <div class="contact-me">
+          <h1>Contact Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            reiciendis corrupti aperiam animi, at neque.
+          </p>
+          <p>myemail@example.test</p>
+        </div>
+
+        <div class="about-me">
+          <h1>About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            reiciendis corrupti aperiam animi, at neque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            reiciendis corrupti aperiam animi, at
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ############ for smooth scrolling ########## -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

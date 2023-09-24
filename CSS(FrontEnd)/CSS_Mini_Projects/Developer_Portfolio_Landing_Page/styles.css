@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Lato:wght@300;400;700&family=Outfit:wght@400;700&family=Poppins:wght@200;400;500;700&family=Public+Sans:wght@300;400;700&family=Roboto:wght@400;500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: auto;
+}
+/* #####################################  Hero Section ############################################ */
+
+.hero-section {
+  background: url("https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1746&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+.hero-text {
+  font-weight: 400;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 5;
+  text-shadow: 0px 10px 15px rgba(0, 0, 0, 1.5);
+}
+
+.hero-text h2 {
+  padding: 0.9rem;
+}
+.hero-text span {
+  font-size: 1.5rem;
+}
+
+.hero-text h1 {
+  padding: 0.5rem;
+}
+
+/* #####################################  Black Box Section ############################################ */
+
+.black-box-section {
+  max-width: 1440px;
+
+  background-color: #000;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  height: 150px;
+  animation: fadeIn 1s ease-in-out;
+}
+.black-box-section h3 {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.black-box-section span {
+  font-size: 96px;
+  font-weight: 400;
+}
+/* #####################################  Card Section ############################################ */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(autofit, min-max(340px, 1fr));
+  margin: 10px;
+  gap: 10px;
+}
+
+.card-content h3 {
+  padding: 0 1rem;
+}
+
+.card-content p {
+  padding: 0 1rem;
+}
+
+/* #####################################  Bottom Section ############################################ */
+
+.bottom-section {
+  max-width: 1440px;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.contact-me {
+  width: 50%;
+  height: 280px;
+
+  background-color: olivedrab;
+}
+.about-me {
+  width: 50%;
+  height: 280px;
+  background-color: maroon;
+}
+
+.contact-me h1 {
+  font-size: 3rem;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.contact-me p {
+  padding: 0.5rem 1rem;
+}
+.about-me h1 {
+  font-size: 3rem;
+
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.about-me p {
+  padding: 0.5rem 1rem;
+}
+
+/* #####################################  Media Section ############################################ */
+
+@media screen and (max-width: 1231px) {
+  .black-box-section div h3 {
+    font-size: 48px;
+  }
+  .black-box-section div span {
+    font-size: 72px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .hero-section {
+    min-height: 50vh;
+  }
+  .black-box-section div h3 {
+    font-size: 24px;
+  }
+  .black-box-section div span {
+    font-size: 36px;
+  }
+  .bottom-section {
+    flex-direction: column;
+  }
+  .about-me {
+    width: fit-content;
+  }
+  .contact-me {
+    width: fit-content;
+  }
+  .about-me h1 {
+    font-size: 2rem;
+  }
+  .contact-me h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 572px) {
+  .hero-section .hero-text {
+    font-size: 1rem;
+  }
+  .about-me h1 {
+    font-size: 1.5rem;
+  }
+  .contact-me h1 {
+    font-size: 1.5rem;
+  }
+}
+/* #####################################  Animations ############################################ */
+
+.hero-text:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+  color: #f9f9f9;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card1 {
+  animation: slideInUp 2s ease-in-out;
+}
+.card2 {
+  animation: fadeIn 2s ease-in-out;
+}
+.card3 {
+  animation: slideInUp3 2s ease-in-out;
+}
+
+@keyframes slideInUp3 {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.black-box-section div:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  text-shadow: 0px 5px 10px rgba(235, 232, 232, 0.8);
+  color: antiquewhite;
+}
+
+.about-me {
+  animation: slideInUp3 2s ease-in-out;
+}
+.contact-me {
+  animation: slideInUp 2s ease-in-out;
+}
+
+.down_arrow_container > img {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  /* transform: translate(-50%, -50%); */
+  width: 40px;
+  height: fit-content;
+  /* margin-top: -40px; */
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.down_arrow_container > img:hover {
+  transform: scale(1.05);
+}

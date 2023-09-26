@@ -1,0 +1,193 @@
+#navbar {
+  height: 45px;
+  margin: 0 auto;
+  padding: 0 15%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#logo {
+  width: 100px;
+  float: left;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.navbarSection {
+  display: flex;
+  align-items: center;
+  float: left;
+  border-left: 1px solid grey;
+  height: 45px;
+}
+
+.navbarSection a {
+  text-decoration: none;
+  color: black;
+}
+
+#signinImage {
+  margin: 8px;
+  float: left;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#signinText {
+  font-weight: bold;
+  font-size: 95%;
+  position: relative;
+  padding-right: 50px;
+}
+
+.navbarMenu {
+  font-weight: bold;
+  font-size: 95%;
+  padding: 0 15px;
+}
+
+.navbarMenuMore {
+  font-weight: bold;
+  font-size: 95%;
+  padding: 0 10px;
+}
+
+#moreArrow {
+  margin-left: 5px;
+  width: 20px;
+}
+
+#searchBar {
+  background-color: lightgray;
+  border: none;
+  outline: 0;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 3px;
+  margin: 9px 0 9px 9px;
+}
+
+/* .clear {
+  clear: both;
+} */
+
+.menuContainerOne {
+  width: 100%;
+  background-color: #bb1919;
+  height: 60px;
+  border-top: 1px #cccccc solid;
+}
+
+.menuContainerOne h1 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  margin-left: 12%;
+  padding-top: 10px;
+}
+
+.menuContainerTwo {
+  width: 100%;
+  padding-left: 12%;
+  background-color: #a91717;
+  height: 42px;
+  margin-top: -10px;
+}
+
+.container {
+  margin: 10px 10px 0 10px;
+  float: left;
+  border-left: 1px solid #bb4545;
+  height: 25px;
+  padding-left: 10px;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+}
+
+.home {
+  border: none;
+}
+
+#menuArrow {
+  width: 10px;
+}
+
+.pageContainer {
+  margin: 0 auto;
+  padding: 0 15%;
+}
+
+#mainArticle {
+  width: 60%;
+  float: left;
+  padding-right: 20px;
+  border-right: 1px solid lightgrey;
+}
+
+#mainArticle a {
+  text-decoration: none;
+  color: black;
+}
+
+#articleSummary {
+  color: #5a5a5a;
+  margin-top: 5px;
+  margin-right: 18px;
+  width: 260px;
+  float: left;
+  font-size: 15px;
+}
+
+.articleContainer {
+  display: flex;
+  width: 100%;
+}
+
+#articleHr {
+  width: 46px;
+  margin-left: 0;
+  background-color: red;
+  height: 1px;
+  border: none;
+}
+
+#mainArticleHr {
+  width: 600px;
+  margin-top: 3px;
+  height: 1px;
+  border: none;
+  background-color: lightgray;
+}
+
+.card {
+  width: 200px;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.card-center {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+
+.cardImg {
+  width: 150px;
+  object-fit: contain;
+}
+
+.subSections {
+  display: flex;
+}
+
+.cardTitle {
+  font-size: 14px;
+}

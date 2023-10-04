@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.game {
+  position: absolute;
+  inset: 25%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 370px;
+  height: 370px;
+}
+
+input {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.menu {
+  margin: auto;
+}

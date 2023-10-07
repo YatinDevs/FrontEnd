@@ -143,3 +143,25 @@ let y = 10.525;
 console.log(Math.floor(y));
 console.log(Math.abs(y));
 console.log(Math.ceil(y));
+
+let str = "newTono";
+let str1 = "school";
+console.log(str.length);
+console.log(str.slice(0, 2));
+console.log(str.charAt(4));
+console.log(str.charCodeAt(4)); //ASCII
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str.substring(2, 5));
+console.log(str.replace("n", "M"));
+console.log(str.replaceAll("o", ""));
+console.log(str.concat(str1));
+str = " new  ton ";
+console.log(str.trim("//s"));
+console.log(str.trimEnd());
+console.log(str.trimStart());
+str = "newton school";
+console.log(str.split(" "));
+str = "4";
+console.log(str.padStart(5, "0"));
+console.log(str.padEnd(5, "0"));

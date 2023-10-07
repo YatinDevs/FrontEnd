@@ -269,3 +269,14 @@ const closecartBtn = document.querySelector(".closecart");
 closecartBtn.addEventListener("click", (e) => {
   cartUIDiv.classList.remove("cartopened");
 });
+
+// ----------------------------------- Task : 3 ---------------------------------------------
+
+class Product {
+  constructor(id, title, price, image) {
+    this.id = id;
+    this.title = title;
+    this.price = price;
+    this.image = image;
+  }
+}

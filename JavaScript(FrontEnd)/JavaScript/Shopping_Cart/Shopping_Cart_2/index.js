@@ -201,17 +201,15 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-
 // ----------------------------------- Task : 1 ---------------------------------------------
-
 const productContainerDiv = document.querySelector(".productscontainer");
 
 const productElements = productslist.map((e) => {
   /*
-     // Product div created
-      <div class="product">
-      </div>
- */
+       // Product div created
+        <div class="product">
+        </div>
+   */
   const productDiv = document.createElement("div");
   productDiv.classList.add("product");
 
@@ -255,4 +253,19 @@ const productElements = productslist.map((e) => {
 
 productElements.forEach((productElement) => {
   productContainerDiv.appendChild(productElement);
+});
+
+// ----------------------------------- Task : 2 ---------------------------------------------
+
+const checkCartBtn = document.querySelector(".carticon");
+const cartUIDiv = document.querySelector(".cartui");
+
+checkCartBtn.addEventListener("click", (e) => {
+  cartUIDiv.classList.add("cartopened");
+});
+
+const closecartBtn = document.querySelector(".closecart");
+
+closecartBtn.addEventListener("click", (e) => {
+  cartUIDiv.classList.remove("cartopened");
 });

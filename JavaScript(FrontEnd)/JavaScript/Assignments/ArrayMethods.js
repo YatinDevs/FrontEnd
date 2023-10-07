@@ -109,7 +109,37 @@ const checkObjectIndex = newArray.findIndex((e) => e.name === "Newton");
 console.log(checkObject);
 console.log(checkObjectIndex);
 
-// some
+// some --> It will check and return true if one matches in the array
 
 const check = newArray.some((e) => e === "N");
 console.log(check);
+
+// every --> It will check all Elements in the array
+
+let StudentsMarks = [45, 64, 77, 45, 54];
+
+const check2 = StudentsMarks.every((e) => {
+  return e > 35;
+});
+
+console.log(check2);
+
+// reduce
+
+let array = [4, 2, 3, 4, 5, 6, 7];
+
+const newArray2 = array.reduce((accumulator, currentValue) => {
+  console.log("acc :  ", accumulator);
+  console.log("curr :  ", currentValue);
+  return accumulator + currentValue;
+}, 10);
+console.log(newArray2);
+
+//----------------------------
+
+let x = 10.7;
+console.log(parseInt(x));
+let y = 10.525;
+console.log(Math.floor(y));
+console.log(Math.abs(y));
+console.log(Math.ceil(y));

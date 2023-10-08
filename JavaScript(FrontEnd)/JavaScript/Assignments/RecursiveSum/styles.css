@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin-top: 20px;
+}
+
+#numSeqInput {
+  width: 150px;
+  height: 30px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+#calculateSumBtn {
+  padding: 5px 10px;
+}
+
+#sumResult {
+  margin-top: 20px;
+  font-size: 20px;
+}

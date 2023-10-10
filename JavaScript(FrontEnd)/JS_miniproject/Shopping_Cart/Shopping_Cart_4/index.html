@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <header>
+      <div class="logo">Logo</div>
+      <button class="carticon" items="0">Cart</button>
+    </header>
+
+    <div class="cartui">
+      <button class="closecart">close</button>
+      <div class="pccontainer"></div>
+    </div>
+
+    <div class="productscontainer"></div>
+  </body>
+</html>
+
+<!--
+    Task 1:
+
+    Task To add Products in Product Container Using JS
+<div class="product">
+<img class='pimage' width="250px" height="350px" src=" ${e.image} "
+alt="">
+<p class='ptitle'>${e.title}</p>
+<div class="priceandaddtocart">
+<p class="pprice">${e.price} DH</p>
+<button class="addtocart" productid=${e.id}>add to cart icon</button>
+</div>
+</div>
+-->
+
+<!--
+  Task 2 :
+You have to do the following things to pass all the test cases-
+
+1. Select the div with class=”carticon”. 
+Add an onclick event handler on it which adds a “cartopened” 
+class to the div with class=”cartui”. This shows the cart
+ items when div with class=”carticon” is clicked.
+
+2. Now to hide the cart, select the div with class=”closecart” 
+and add an onclick event handler to it. The event handler removes 
+the “cartopened” class from the div with class=”cartui”.
+
+-->
+
+<!--
+    Task 3 :
+
+In continuation with shopping cart 2, 
+in this question we will create a product class which will contain all
+ the information of a particular product.
+Implement the following steps to pass all the test cases-
+
+Create a product class which has a constructor which takes in 4 inputs namely -
+ id,title,price and image for a particular product
+
+1 id is the product id
+2 title is the name of the product
+3 price is the price of the product
+4 image is the product image
+
+
+-->
+
+<!--
+  Task : 4
+
+  In continuation with shopping cart 3, 
+  in this question we are going to create the Storage class which
+   will provide us all the necessary functions to -
+
+1. To get the list of items already in cart
+2. To add a new item to cart
+3. To remove a product from cart.
+
+Implement the following steps in order to pass all the test cases-
+
+ 1. Create a Storage class.
+
+
+ 2. Create a static function named getproducts which gets the list of all the
+  items already present in the cart.
+Note- Store the elements in the cart under the key “products” in local storage.
+Store it as an array of product objects.
+
+ 3. Create a static function named addtolocalstorage which takes in an 
+ argument (product) and adds it to the already existing list of products 
+ present in the cart.
+
+
+ 4. Create a function removeproduct which takes in a product id and removes 
+ that product from the local storage.
+
+-->

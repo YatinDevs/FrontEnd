@@ -241,6 +241,25 @@ const createProductElements = productslist.map((e) => {
   addCartBtn.setAttribute("productid", `${e.id}`);
   addCartBtn.textContent = `add to cart icon`;
 
+  addCartBtn.addEventListener("click", (event) => {
+    // Get the product details
+    const productId = e.id;
+    const title = e.title;
+    const price = e.price;
+    const image = e.image;
+
+    const product = new Product(productId, title, price, image);
+
+    // Add the product to the cart
+    Ui.displayproducts(product);
+
+    // Add the product to local storage
+    Storage.addtolocalstorage(product);
+
+    // Update the cart icon
+    const itemsInCart = Storage.getproducts();
+    bag.setAttribute("items", itemsInCart.length);
+  });
   pricecartDiv.appendChild(pricePara);
   pricecartDiv.appendChild(addCartBtn);
 
@@ -352,10 +371,22 @@ class Ui {
     deleteBtn.setAttribute("productid", product.id);
     deleteBtn.textContent = `X`;
 
+    deleteBtn.addEventListener("click", (event) => {
+      const productId = parseInt(event.target.getAttribute("productid"));
+      // Remove the product from the cart and update the UI
+      event.target.parentElement.remove();
+      // Ui.displayproductsLS(); // Update the cart UI
+
+      // Remove the product from local storage
+      Storage.removeproduct(productId);
+      const itemsInCart = Storage.getproducts();
+      bag.setAttribute("items", itemsInCart.length);
+    });
     cartProductDiv.appendChild(pnpDiv);
     cartProductDiv.appendChild(deleteBtn);
-
     productCartDivContainer.appendChild(cartProductDiv);
+
+    return cartProductDiv;
   }
 
   static displayproductsLS() {
@@ -366,3 +397,22 @@ class Ui {
     });
   }
 }
+
+const bag = document.querySelector(".carticon");
+
+function displayCartProducts() {
+  const cartProductContainer = document.querySelector(".pccontainer");
+  cartProductContainer.innerHTML = ""; // Clear previous content
+
+  const itemsInCart = Storage.getproducts();
+  bag.setAttribute("items", itemsInCart.length);
+
+  itemsInCart.forEach((product) => {
+    // Create product elements and display them in the cart
+    const productDiv = Ui.displayproducts(product);
+    cartProductContainer.appendChild(productDiv);
+  });
+}
+window.addEventListener("load", (e) => {
+  displayCartProducts();
+});

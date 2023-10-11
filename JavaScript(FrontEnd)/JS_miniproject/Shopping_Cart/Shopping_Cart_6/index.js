@@ -354,8 +354,9 @@ class Ui {
 
     cartProductDiv.appendChild(pnpDiv);
     cartProductDiv.appendChild(deleteBtn);
-
     productCartDivContainer.appendChild(cartProductDiv);
+
+    return cartProductDiv;
   }
 
   static displayproductsLS() {
@@ -366,3 +367,22 @@ class Ui {
     });
   }
 }
+
+const bag = document.querySelector(".carticon");
+
+function displayCartProducts() {
+  const cartProductContainer = document.querySelector(".pccontainer");
+  cartProductContainer.innerHTML = ""; // Clear previous content
+
+  const itemsInCart = Storage.getproducts();
+  bag.setAttribute("items", itemsInCart.length);
+
+  itemsInCart.forEach((product) => {
+    // Create product elements and display them in the cart
+    const productDiv = Ui.displayproducts(product);
+    cartProductContainer.appendChild(productDiv);
+  });
+}
+window.addEventListener("load", (e) => {
+  displayCartProducts();
+});

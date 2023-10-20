@@ -1,43 +1,49 @@
 function ageChange(e) {
-  const inputBox = document.getElementById("q_age");
-  const errordiv = document.getElementById("errors-holder");
-  const buttonSubmit = document.querySelector("button");
-  const inputValue = parseInt(e.target.value);
+  const errorDisplayUI = document.getElementById("errors-holder");
+  const submitBtn = document.querySelector("button");
+  let inputValue = parseInt(e.target.value);
+
+  console.log(inputValue);
 
   if (inputValue < 5) {
-    errordiv.textContent = `You need to be atleast 5 years old to participate`;
-    buttonSubmit.disabled = true;
-  } else if (isNaN(inputValue)) {
-    errordiv.textContent = "Please choose age";
-    buttonSubmit.disabled = true;
+    errorDisplayUI.textContent = `You need to be atleast 5 years old to participate`;
+    submitBtn.disabled = true;
+    return;
   } else {
-    errordiv.textContent = ``;
-    buttonSubmit.disabled = false;
+    errorDisplayUI.textContent = ``;
+    submitBtn.disabled = false;
+    return;
   }
 }
 
 function handleSubmit(e) {
   e.preventDefault();
-  const checkBox = document.getElementById("q_owns_phone");
-  const inputValue = parseInt(document.getElementById("q_age").value);
-  const resultdiv = document.getElementById("result-holder");
-  const errordiv = document.getElementById("errors-holder");
+  const errorDisplayUI = document.getElementById("errors-holder");
+  const resultDisplayUI = document.getElementById("result-holder");
+  const checkBoxValue = document.getElementById("q_owns_phone");
+  const inputBox = document.getElementById("q_age");
+  let inputValue = parseInt(inputBox.value);
+  const ownsPhone = checkBoxValue.checked;
 
-  if (checkBox.checked) {
-    if (inputValue === 0) {
-      errordiv.textContent = "Please choose age";
-    } else if (inputValue < 13) {
-      resultdiv.textContent = `Use your phone in moderation`;
+  console.log(inputValue);
+  if (inputValue === 0) {
+    errorDisplayUI.textContent = `Please choose age`;
+    return;
+  }
+
+  if (ownsPhone) {
+    console.log(ownsPhone);
+    if (inputValue < 13) {
+      resultDisplayUI.textContent = `You are too young to have a phone`;
     } else {
-      resultdiv.textContent = `You should get a phone`;
+      resultDisplayUI.textContent = `Use your phone in moderation`;
     }
   } else {
-    if (inputValue === 0) {
-      errordiv.textContent = "Please choose age";
-    } else if (inputValue < 13) {
-      resultdiv.textContent = `You will get a phone soon`;
+    if (inputValue < 13) {
+      resultDisplayUI.textContent = `You will get a phone soon`;
     } else {
-      resultdiv.textContent = `You should get a phone`;
+      resultDisplayUI.textContent = `You should get a phone`;
     }
   }
+  console.log("submit-handled", inputValue);
 }
